@@ -1,0 +1,100 @@
+/* styles général */
+
+* {
+    box-sizing: border-box;
+    margin: 0;  
+    padding: 0;
+}
+
+body{
+  font-family: "lato";
+  background-color: #D9D9D9;}
+
+
+  /* styles header nav bar */
+a{
+    text-decoration: none;
+    color: #000000 ;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+
+header{
+    background-color: #ABB6B6;
+    width: 100%;
+
+} 
+
+
+/* styles navbar mobile first */
+  
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+
+  }
+
+  .logo {
+    padding-left: 20px;
+    }
+
+
+  .hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 8px;
+    background-color: black;
+  }
+
+  .nav-link {
+    position: fixed;
+    width: 100%;
+    top: 225px;
+    background-color: #FFD35C;
+  }
+  
+  .nav-link a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .nav-link a:hover {
+    background-color: #d9d9d98a;
+  }
+  
+  .hide {
+    display: none;
+  
+  }
+  
+  /* styles format web */
+
+  @media screen and (min-width: 1210px) {
+    .nav-link {
+      display: block;
+      position: static;
+      width: auto;
+      margin-right: 20px;
+      background: none;
+    }
+  
+    .nav-link a {
+      display: inline-block;
+      padding: 15px 20px;
+    }
+  
+    .hamburger {
+      display: none;
+    }
+  }
