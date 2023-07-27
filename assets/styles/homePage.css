@@ -2,8 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 1px solid red
-
 }
 
 body {
@@ -78,7 +76,6 @@ h2 {
     justify-content: center;
     align-items: center;
    /* margin-top: 15px;*/
-    border: green solid 4px;
 }
 
 .divCoffee {
@@ -105,3 +102,5 @@ h2 {
 footer{
     height: 30px;
     width: 100%}
+
+  
