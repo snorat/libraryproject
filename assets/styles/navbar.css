@@ -122,33 +122,3 @@ header{
       display: none;
     }
   }
-
-
-  /* debut de la page contact */
-
-.headercontact {
-    /* background-image: url("assets/img/groupe-jeunes-femmes-affaires-confiants-regardant-camera.jpg"); */
-    background-size: cover;
-    position: relative;
-    height: 200px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    background-image: url();
-
-}
-
-
-.headercontact > h1 {
-    font-size: var(--h1-font-size);
-    color: var(--text-color);
-   
-}
-
-img{
-  height: 10rem;
-  width: auto;
-  width : 150px; height : 150px;
-  border-radius : 75px;
-}
