@@ -1,0 +1,125 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+* { 
+    margin: 0 ;
+    padding: 0;
+    border: 1px solid red;
+}
+
+
+:root { 
+    --main-font-family: "Lato";
+    --main-background-color: #D9D9D9;
+    --quote-font-family: "Lily Script One";
+
+    /* Style des titres /
+        --main-font: Lato;
+        --text-color: black; 
+        --h2-font-size: 0.8rem;
+        --h1-font-size: 2.3rem;
+    
+        / Style des images /
+        --img-widht: 90%;
+    
+        / Style du boutton */
+        /* --button-font-size: 0.7rem;
+        --button-background-color: #3A86FF;
+        --button-text-color: white; 
+        --button-width: 35%;
+        --button-height: 2rem;
+        --button-margin: 5%; */
+
+
+}
+
+
+
+body { 
+    background-color: var(--main-background-color);
+}
+
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center; 
+    padding: 40px;
+}
+
+#site-search { 
+    margin: 30px;
+    border-radius: 5%;
+    width: 70%;
+    padding: 8px;
+}
+
+
+.quote {
+    font-family: var(--quote-font-family);
+}
+
+
+.section_livres { 
+    display: grid;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.article  { 
+    margin: 1em;
+    padding: 1em;
+    background: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.article > img {
+    width: 100px;
+    height: 150px;
+}
+
+.article > div { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.article button { 
+    background-color: #3A86FF;
+    color: white;
+    font-family: 'Lato';
+    padding: 12px;
+    font-size: 1em;
+}
+
+.article h3 { 
+    padding: 8px;
+    text-align: center;
+}
+
+.article h4 { 
+    padding: 8px;
+    text-align: center;
+}
+
+ h2 { 
+    text-align: center;
+}
+
+@media screen and (min-width: 25.063em) { 
+    /*400px = 25em*/
+    .section_livres { 
+        display: none;
+    }
+
+    .article h3 { 
+        padding: 20px;
+        text-align: center;
+    }
+}
