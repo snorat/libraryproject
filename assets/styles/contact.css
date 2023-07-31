@@ -1,0 +1,199 @@
+
+.body{
+  
+width: 1200px;
+text-align: left; 
+}
+
+/* Styles pour la section "imagecontact" */
+.imagecontact {
+  background-size: cover;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/assets/img/timothy-barlin-GX4YM64o49U-unsplash.jpg");
+  opacity: 70%;
+  width: 100%;
+}
+
+.imagecontact > h1 {
+  font-size: var(--h1-font-size);
+  color: var(--text-color);
+}
+
+/* Styles pour la section "présentation" */
+.présentation {
+margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f5eee4;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #333333;
+
+}
+
+.présentation h2 {
+  color: #333333;
+}
+
+.présentation p {
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Styles pour la section "contact" */
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  
+}
+
+.fichecontact {
+  background-color: #f5eee4;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  margin: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.fichecontact > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.fichecontact > h3 {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #333333;
+}
+
+.fichecontact > p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666666;
+}
+
+/***************** 
+******************
+******************
+Styles des boutton 
+******************
+******************
+******************
+*/
+.contact-btn {
+
+  display: inline-block;
+  background-color: #c9deb4;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-btn a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-btn:hover {
+  background-color: #9fcf89;
+}
+/***************** 
+******************
+******************
+Fin styles des boutton 
+******************
+******************
+******************
+*/
+
+/* Styles pour la section "informations" */
+
+.informations {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f5eee4;
+}
+
+.column {
+  flex: 1; 
+  padding: 50px;
+  border-right: 1px solid #ccc;
+}
+
+.column > h2 {
+
+  color: #333333;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.column > p {
+
+  color: #666666;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.map {
+  flex: 1;
+  height: 300px;
+  text-align: center;
+  color: #666666;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.column:last-child {
+  border-right: none;
+}
+
+
+/* Media queries pour page web */
+
+@media screen and (min-width: 770px){
+
+  .imagecontact{
+    height: 50vh;
+  }
+
+  .présentation {
+    margin: 0 200px;
+    padding: 50px; 
+  }
+
+  .présentation p {
+    font-size: 16px;
+    line-height: 1.8;
+  
+}
+
+.informations > .column > p{
+  font-size: 20px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.column {
+  flex: 1; 
+  padding: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+}
