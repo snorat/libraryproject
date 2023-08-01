@@ -4,14 +4,14 @@
   box-sizing: border-box;
   margin: 0;  
   padding: 0;
-  border: 1px solid red
+
 }
 
 :root {
   --main-font: Lato;
   --text-color: black; 
   --button-font-size: 0.7rem;
-  --button-background-color: #3A86FF;
+  --button-background-color: #C9DEB4;
   --button-text-color: white; 
   --h2-font-size: 0.8rem;
   --h1-font-size: 2.3rem;
@@ -19,7 +19,7 @@
 
 body{
   font-family: "lato";
-  background-color: #D9D9D9;}
+  background-color: #F6F4EF;}
 
 
   /* styles header nav bar */
@@ -32,7 +32,7 @@ a{
 
 
 header{
-    background-color: #ABB6B6;
+    background-color: #F6F4EF;
     width: 100%;
 
 } 
@@ -98,10 +98,13 @@ header{
   
   .hide {
     display: none;
-
-  
   }
   
+/* #panier { 
+  width: 10px;
+  height: 10px;
+} */
+
   /* styles format web */
 
   @media screen and (min-width: 1210px) {

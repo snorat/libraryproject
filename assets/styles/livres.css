@@ -1,5 +1,3 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
@@ -7,14 +5,15 @@
 * { 
     margin: 0 ;
     padding: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 
 :root { 
     --main-font-family: "Lato";
-    --main-background-color: #D9D9D9;
+    --main-background-color: #F6F4EF;
     --quote-font-family: "Lily Script One";
+    /* --button-background-color: #C9DEB4; */
 
     /* Style des titres /
         --main-font: Lato;
@@ -49,18 +48,33 @@ body {
     align-content: space-between;
     justify-content: center; 
     padding: 40px;
+    background-image: url(/assets/img/img-livres/livres_header.png);
+    background-size: cover;
+    max-height: 90vh ;
+    background-repeat: no-repeat;
+    font-size: large;
+    text-align: center;
 }
 
 #site-search { 
-    margin: 30px;
-    border-radius: 5%;
+    margin: 15px 64px;
+    border-radius: 16px;
     width: 70%;
     padding: 8px;
+    align-items: center;
+    
 }
 
+#search-btn { 
+   margin: 8px 160px;
+   align-items: center;
+   padding: 8px;
+}
 
 .quote {
     font-family: var(--quote-font-family);
+    padding: 24px;
+    text-align: center;
 }
 
 
@@ -73,11 +87,16 @@ body {
 .article  { 
     margin: 1em;
     padding: 1em;
-    background: whitesmoke;
+    background: #F6F8F2;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 0.3rem solid;
+    border-color: #9FCF89;
+    border-radius: 2px;
+    box-shadow: 2px 3px 5px grey;
 }
+
 .article > img {
     width: 100px;
     height: 150px;
@@ -87,13 +106,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
+    width: 15rem;
+    min-height: 10rem;
+    justify-content: center;
 }
 
 .article button { 
-    background-color: #3A86FF;
-    color: white;
-    font-family: 'Lato';
+    background-color: #C9DEB4;
+    color: black;
+    font-family: var(--main-font-family);
+    margin-top: 8px;
     padding: 12px;
     font-size: 1em;
 }
@@ -101,6 +123,7 @@ body {
 .article h3 { 
     padding: 8px;
     text-align: center;
+    font-family: var(--main-font-family);
 }
 
 .article h4 { 
@@ -108,18 +131,99 @@ body {
     text-align: center;
 }
 
- h2 { 
+
+
+/* ***************************** Debut du footer *****************************  */
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    background-color:#D7CBC1;
+}
+
+
+.footer > .logos { 
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    width: 15%;
+    margin:0 38%;
+}
+
+/* .logo-footer img { 
+    width: 25px;
+    height: 25px;
+}
+
+#insta { 
+    margin: 0 24px;
+}
+
+#fb { 
+    margin: 0 24px;
+}
+
+#linkedin { 
+    margin: 0 24px;
+} */
+
+#phrase { 
+    font-family: var(--main-font-family);
+    font-weight: bold;
+    font-size: medium;
+    padding: 8px;
     text-align: center;
 }
 
-@media screen and (min-width: 25.063em) { 
-    /*400px = 25em*/
+/* ***************************** Fin du footer *****************************  */
+
+
+
+
+/* ***************************** Debut des Media Queries *****************************  */
+
+@media screen and (min-width: 401px) { 
     .section_livres { 
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: row;
     }
 
-    .article h3 { 
-        padding: 20px;
-        text-align: center;
+    #phrase { 
+        font-family: var(--main-font-family);
+        font-weight: bold;
+        font-size: medium;
+        padding: 8px;
+        text-align: left;
     }
+
+
+    .footer > .logos { 
+        display: flex;
+        justify-content: space-between;
+        padding-top: 16px;
+        width: 15%;
+        margin:0 42%;
+    }
+
+
+    #site-search { 
+        margin: 15px 64px;
+        border-radius: 16px;
+        width: 55%;
+        padding: 8px;
+        align-items: center;
+        
+    }
+
+    #search-btn { 
+        margin: 8px 24px;
+        align-items: center;
+        padding: 8px;
+     }
+
+
 }
+
+/* ***************************** Fin des Media Queries *****************************  */
