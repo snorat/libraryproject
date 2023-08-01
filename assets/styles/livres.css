@@ -11,7 +11,7 @@
 
 :root { 
     --main-font-family: "Lato";
-    --main-background-color: #F6F4EF;
+    --main-background-color: #f8f6f2;
     --quote-font-family: "Lily Script One";
     /* --button-background-color: #C9DEB4; */
 
@@ -52,24 +52,64 @@ body {
     background-size: cover;
     max-height: 90vh ;
     background-repeat: no-repeat;
-    font-size: large;
     text-align: center;
 }
 
-#site-search { 
+.header > h1 { 
+    font-size: 2.3rem;
+}
+
+
+/* #site-search { 
     margin: 15px 64px;
     border-radius: 16px;
     width: 70%;
     padding: 8px;
     align-items: center;
-    
 }
 
 #search-btn { 
    margin: 8px 160px;
    align-items: center;
    padding: 8px;
+} */
+
+.lol {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 300px;
+    padding: 5px 0;
+    width: 80%;
+    justify-content: flex-start;
+    margin-left: 10%;
 }
+
+#site-search { 
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding: 11px;
+    text-align: center;
+}
+
+#search-btn { 
+    background: none;
+	color: #f8f6f2;
+	border: none;
+	padding: 10px;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    border-radius:300px;
+    background-color: #C8B9AB;
+    padding: 10px 24px;
+}
+
+
 
 .quote {
     font-family: var(--quote-font-family);
@@ -87,14 +127,14 @@ body {
 .article  { 
     margin: 1em;
     padding: 1em;
-    background: #F6F8F2;
+    background: #F5EEE4;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 0.3rem solid;
-    border-color: #9FCF89;
-    border-radius: 2px;
-    box-shadow: 2px 3px 5px grey;
+    /* border: 0.3rem solid; */
+    border-color: #C8B9AB;
+    border-radius: 8px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .article > img {
@@ -112,13 +152,21 @@ body {
 }
 
 .article button { 
-    background-color: #C9DEB4;
-    color: black;
+    background-color: #C8B9AB;
+    color: #f8f6f2;
     font-family: var(--main-font-family);
     margin-top: 8px;
     padding: 12px;
     font-size: 1em;
+    border: none;
+    border-radius: 0.3em;
+    box-shadow: 2px 3px 5px grey;
 }
+
+button:hover {
+    background-color: #a68c77;
+}
+
 
 .article h3 { 
     padding: 8px;
@@ -150,23 +198,6 @@ body {
     margin:0 38%;
 }
 
-/* .logo-footer img { 
-    width: 25px;
-    height: 25px;
-}
-
-#insta { 
-    margin: 0 24px;
-}
-
-#fb { 
-    margin: 0 24px;
-}
-
-#linkedin { 
-    margin: 0 24px;
-} */
-
 #phrase { 
     font-family: var(--main-font-family);
     font-weight: bold;
@@ -176,6 +207,9 @@ body {
 }
 
 /* ***************************** Fin du footer *****************************  */
+
+
+
 
 
 
@@ -208,19 +242,24 @@ body {
     }
 
 
-    #site-search { 
-        margin: 15px 64px;
-        border-radius: 16px;
-        width: 55%;
-        padding: 8px;
-        align-items: center;
-        
-    }
+    .lol{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 8px 150px;
+        padding: 0;
+        width: 75%;
+        /* margin-right: 25%;
+        margin-left: 25%; */
+        }
+
+ 
+    
 
     #search-btn { 
-        margin: 8px 24px;
+        margin: 8px;
         align-items: center;
-        padding: 8px;
+        padding: 16px 40px;
      }
 
 
