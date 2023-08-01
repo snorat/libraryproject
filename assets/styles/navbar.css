@@ -9,11 +9,10 @@
 
 :root {
   --main-font: Lato;
-  --text-color: black; 
-  --button-font-size: 0.7rem;
-  /* --button-background-color: #9FCF89; */
+  color: var(--text-color); 
+  --button-font-size: 1rem;
   --button-text-color: white; 
-  --h2-font-size: 1rem;
+  --h2-font-size: 1.4em;
   --h1-font-size: 2.3rem;
 }
 

@@ -12,19 +12,20 @@
     --text-color: #333333; 
     --h2-font-size: 1.4rem;
     --h1-font-size: 2.3rem;
+    --font-size-mobile: 1rem;
 
     /* Style des images */
-    --img-widht: 80%;
+    --img-widht: 250px;
 
     /* Style du boutton */
-    --button-font-size: 0.8rem;
+    --button-font-size: 1rem;
     --button-background-color:#C8B9AB;
     --button-text-color: #F8F6F2; 
     --button-border: solid #F8F6F2;
     --button-border-radius: 0.3em;
-    --button-width: 50%;
-    --button-height: 2rem;
-    --button-margin: 5% 25% 5% 25%;;
+    --button-width: 150px;
+    --button-height: 45px;
+    --button-margin: 5px 15px 15px;
 
 /* WEBSITE */
     /* Style des titres */
@@ -65,26 +66,28 @@ body {
     text-align: center;
 }
 
+#ambiancetitre {
+    font-size: var(--h2-font-size);
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
 .ambiance {
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
 }
 .ambiance > video {
     height: 400px;
-    width: 200px;
-    margin: 0;
-}
-
-
-#ambiancetitre {
-    font-size: var(--h2-font-size);
-    margin: auto;
-    padding: 10px;
+    width: 250px;
+    margin: 4px 15px 30px 15px;
 }
 
 .quote {
     background-color: #FAEF9E;
-    height: 400px;
-    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -95,10 +98,12 @@ body {
     font-size: 1.4em;
     font-style: italic;
     margin: revert;
+    text-align: center;
 }
 
 .quote > h5 {
     font-family: var(--main-font);
+    color: var(--text-color); 
     margin: 0px 8px 10px;
     text-align: right;
     font-size: 0.8rem;
@@ -106,22 +111,21 @@ body {
 
 .quote > p {
     font-family: var(--main-font);
-    font-size: 1rem;
+    font-size: var(--font-size-mobile);
+    color: var(--text-color); 
     font-style: normal;
+    margin: revert;
+    padding: 10px;
 }
 
-/* .premiereBoisson {
+.premiereBoisson {
     background-color: #C8B9AB;
     border-radius: 0.3em;
-    /* margin: 12%; 
+    margin: 40px; 
     display: flex;
     flex-direction: column ;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
     align-content: center;
     align-items: center;
-    justify-content: center;
 }
 .premiereBoisson > h2 {
     padding: 30px 30px 20px;
@@ -134,17 +138,17 @@ body {
 
 .premiereBoisson > img {
     width: var(--img-widht);
-    margin: auto;
+    /* margin: auto; */
     border-radius: inherit;
 }
 
 .premiereBoisson > p {
     font-family: var(--main-font);
-    font-size: 0.66rem;
+    font-size: var(--font-size-mobile);
     font-style: normal;
     text-align: center;
-    padding: 12px;
-    color: var(--text-color);
+    padding: 12px 15px;
+    color: var(--text-color); 
 }
 
 .premiereBoisson > button {
@@ -160,16 +164,6 @@ body {
     font-weight: bold;
 }
 
-.moreDrinks {
-    margin: 12%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-}
-
 #leschouchous {
     padding: 0px 25px;
     text-align: center;
@@ -178,10 +172,23 @@ body {
     color: var(--text-color);
    
 }
+
+ .moreDrinks {
+    /* background-color: #C8B9AB; */
+    border-radius: 0.3em;
+    margin: 40px; 
+    display: flex;
+    flex-direction: column ;
+    align-content: center;
+}
+
 .secondeBoisson {
     background-color: #C8B9AB;
     border-radius: 0.3em;
-    margin: 0px 0px 15px 0px;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    margin: 0px 0px 15px;
 
 }
 .secondeBoisson > h2 {
@@ -199,6 +206,16 @@ body {
     border-radius: inherit;
 }
 
+.secondeBoisson > p {
+    font-family: var(--main-font);
+    font-size: var(--font-size-mobile);
+    font-style: normal;
+    text-align: center;
+    padding: 12px 15px;
+    color: var(--text-color);
+}
+
+
 .secondeBoisson > button {
     width: var(--button-width);
     height: var(--button-height);
@@ -215,7 +232,9 @@ body {
 .troisiemeBoisson {
     background-color: #C8B9AB;
     border-radius: 0.3em;
-    margin: 15px 0px 15px 0px;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
 }
 .troisiemeBoisson > h2 {
     padding: 20px 30px 20px;
@@ -230,6 +249,15 @@ body {
     width: var(--img-widht);
     margin: 0% 10%;
     border-radius: inherit;
+}
+
+.troisiemeBoisson > p {
+    font-family: var(--main-font);
+    font-size: var(--font-size-mobile);
+    font-style: normal;
+    text-align: center;
+    padding: 12px 15px;
+    color: var(--text-color);
 }
 
 .troisiemeBoisson > button {
@@ -248,7 +276,10 @@ body {
 .quatriemeBoisson {
     background-color: #C8B9AB;
     border-radius: 0.3em;
-    margin: 15px 0px 15px 0px;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    margin: 15px 0px;
 }
 .quatriemeBoisson > h2 {
     padding: 20px 30px 20px;
@@ -263,6 +294,15 @@ body {
     width: var(--img-widht);
     margin: 0% 10%;
     border-radius: inherit;
+}
+
+.quatriemeBoisson > p {
+    font-family: var(--main-font);
+    font-size: var(--font-size-mobile);
+    font-style: normal;
+    text-align: center;
+    padding: 12px 15px;
+    color: var(--text-color);
 }
 
 .quatriemeBoisson > button {
@@ -305,7 +345,6 @@ body {
     .ambiance > video {
         height: 900px;
         width: 800px;
-        /* margin: 0% 13% 8% 13%; */
     }
 
     .quote > h3 { 
@@ -315,8 +354,8 @@ body {
 
     .quote > h5 { 
         font-size: 1.2rem;
-        padding: 0px 300px 30px ;
     }
+
     .quote > p {
         font-size: 1.3rem;
         text-align: center;
@@ -363,7 +402,6 @@ body {
     }
 
     .secondeBoisson {
-        /* position: absolute; */
         margin: 50px 10px 5px 50px;
         width: 600px;
     }
