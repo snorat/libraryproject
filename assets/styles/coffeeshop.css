@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: 1px solid red */
+     /* border: 1px solid red */
     
 }
 :root {
@@ -30,14 +30,17 @@
 /* WEBSITE */
     /* Style des titres */
     --h1-font-size-web:3rem;
-    --h2-font-size-web: 1.6rem;
+    --h2-font-size-web: 2.3rem;
+    --font-size-web:1.3rem;
 
     /* Styles des buttons*/
-    --button-width-web:25%;
+    --button-width-web:250px;
     --button-height-web: 3rem;
-    --button-font-size-web: 1rem;
+    --button-font-size-web: 1.2rem;
 
     /* Style des images */
+    --img-margin-web: 0px 150px;
+    --img-width-web-: 280px;
     --img-widht-web: 45%;
 }
 
@@ -50,8 +53,7 @@ body {
     background-image: url("/assets/img/h1\ header\ copie.png");
     background-size: cover;
     display: flex;
-    align-items: flex-end;
-    height: 250px;
+    height: 40vh;
     margin: auto;
     align-content: center;
     flex-direction: row;
@@ -87,11 +89,12 @@ body {
 }
 
 .quote {
-    background-color: #FAEF9E;
+    background-color: #C9DEB4;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;   
+    padding: 20px;
+    
 }
 .quote > h3 {
     font-family: var(--main-font);
@@ -127,7 +130,7 @@ body {
     align-content: center;
     align-items: center;
 }
-.premiereBoisson > h2 {
+#titrePremiereBoisson {
     padding: 30px 30px 20px;
     text-align: center;
     font-family: var(--main-font);
@@ -138,7 +141,6 @@ body {
 
 .premiereBoisson > img {
     width: var(--img-widht);
-    /* margin: auto; */
     border-radius: inherit;
 }
 
@@ -174,7 +176,6 @@ body {
 }
 
  .moreDrinks {
-    /* background-color: #C8B9AB; */
     border-radius: 0.3em;
     margin: 40px; 
     display: flex;
@@ -323,28 +324,42 @@ body {
 @media screen and (min-width: 401px) { 
 
     body {
-        /* width: 1200px; */
         align-items: center;
+    }
+
+    .headercoffeeshop {
+        height: 70vh;
     }
     .headercoffeeshop > h1 {
         font-size: var(--h1-font-size-web);
         background-image: cover;
+        
     }
 
     .ambiance {
         display: flex;
         justify-content: space-around;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: stretch;
+        margin: 120px;
     }
 
     #ambiancetitre { 
         font-size: var(--h2-font-size-web);
         padding: 50px;
+        margin: 70px 0px 0px;
+
     }
 
     .ambiance > video {
-        height: 900px;
+        height:1000px;
         width: 800px;
+        margin: 0px 2px;
+    }
+
+    .quote {
+        margin-left: 4rem;
+        width: 100%;
     }
 
     .quote > h3 { 
@@ -354,10 +369,11 @@ body {
 
     .quote > h5 { 
         font-size: 1.2rem;
+        margin: 0px 48px 10px;
     }
 
     .quote > p {
-        font-size: 1.3rem;
+        font-size: var(--font-size-web);
         text-align: center;
     }
 
@@ -371,28 +387,43 @@ body {
         flex-direction: row;
         justify-content: space-around;
         align-content: space-between;
+        margin: auto;
 
     }
+
 
     .premiereBoisson {
         margin: auto;
-        width: 600px;
+        width: 75%;
+        display: flex;
+        align-content: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 0px 0px 8px 8px;
     }
 
-    .premiereBoisson > img {
+    #img1stdrink {
+        margin: 50px;
         width: var(--img-widht-web);
-        margin: auto;
+        height: 450px;
     }
 
-    .premiereBoisson > h2 {
+    #titrePremiereBoisson {
         font-size: var(--h2-font-size-web);
-        padding: 60px;
+        padding: 16px;
+        margin: 0 225px;
+        background-color: #C8B9AB;
+        border-radius: 8px 8px 0px 0px;
+}
+
+
     }
+
 
     .premiereBoisson > p {
-        font-size: 1.3rem;
+        font-size: var(--font-size-web);
         text-align: center;
-        padding: 5% 10% 0% 10%;
+        padding: 30px 20px;
         margin: 0px 50px 0 50px;
     }
     .premiereBoisson > button {
@@ -402,13 +433,13 @@ body {
     }
 
     .secondeBoisson {
-        margin: 50px 10px 5px 50px;
-        width: 600px;
+        margin: 50px 10px 5px 45px;
+        width: 550px;
     }
 
     .secondeBoisson > img {
-        margin-left: 25%;
-        width: 50%;
+        margin:var(--img-margin-web);
+        width: var(--img-width-web-);
     }
 
     .secondeBoisson > h2 {
@@ -416,28 +447,28 @@ body {
         padding: 60px;
     }
 
-    /* .secondeBoisson > p {
-        font-size: 1.3rem;
-        text-align: center;
-        padding: 5% 10% 0% 10%;
-        margin: 0px 50px 0 50px;
-    } */
+   .secondeBoisson > p {
+    font-size: var(--font-size-web);
+    text-align: center;
+    padding: 30px 20px;
+    margin: 0px 50px 0 50px;
+    } 
+
     .secondeBoisson > button {
-        margin-left: 35%;
         width: var(--button-width-web);
         height: var(--button-height-web);
         font-size: var(--button-font-size-web);
     }
 
     .troisiemeBoisson {
-        /* position: absolute; */
         margin: 50px 10px 5px 50px;
-        width: 600px;
+        width: 550px;
     }
 
     .troisiemeBoisson > img {
-        margin-left: 25%;
-        width: 50%;
+        margin:var(--img-margin-web);
+        width: var(--img-width-web-);
+        height: 385px;
     }
 
     .troisiemeBoisson > h2 {
@@ -445,28 +476,27 @@ body {
         padding: 60px;
     }
 
-    /* .secondeBoisson > p {
-        font-size: 1.3rem;
+    .troisiemeBoisson > p {
+        font-size: var(--font-size-web);
         text-align: center;
-        padding: 5% 10% 0% 10%;
+        padding: 30px 20px;
         margin: 0px 50px 0 50px;
-    } */
+    } 
     .troisiemeBoisson > button {
-        margin-left: 35%;
         width: var(--button-width-web);
         height: var(--button-height-web);
         font-size: var(--button-font-size-web);
     }
 
     .quatriemeBoisson {
-        /* position: absolute; */
-        margin: 50px 10px 5px 50px;
-        width: 600px;
+        margin: 50px 40px 5px 50px;
+        width: 550px;
     }
 
     .quatriemeBoisson > img {
-        margin-left: 25%;
-        width: 50%;
+        margin:var(--img-margin-web);
+        width: var(--img-width-web-);
+        height: 380px;
     }
 
     .quatriemeBoisson > h2 {
@@ -474,14 +504,13 @@ body {
         padding: 60px;
     }
 
-    /* .secondeBoisson > p {
-        font-size: 1.3rem;
+    .quatriemeBoisson > p {
+        font-size: var(--font-size-web);
         text-align: center;
-        padding: 5% 10% 0% 10%;
+        padding: 30px 20px;
         margin: 0px 50px 0 50px;
-    } */
+    } 
     .quatriemeBoisson > button {
-        margin-left: 35%;
         width: var(--button-width-web);
         height: var(--button-height-web);
         font-size: var(--button-font-size-web);
