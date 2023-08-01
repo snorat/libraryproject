@@ -3,21 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Home</title>
-    <link rel="stylesheet" href="/assets/styles/style.css">
+    <title>vidéoTextEssai</title>
+    <link rel="stylesheet" href="assets/styles/homePage.css">
+    <link rel="stylesheet" href="assets/styles/navbar.css">
 </head>
-
 <body>
-    <header></header>
-    <section class="header">
-        <img src="assets/img/imagePrincipale.png" alt=" Intérieur d'un coffe shop librairie">
-            <h1>Le temps d'un instant</h1>
-            <div class="divClass">
-            <p>Ouvert depuis 2020,<strong> Le temps d'un instant</strong> est un <strong>café littéraire</strong>
-                situé dans le XXème arrondissement. </p>
-                <button>En savoir +</button>
+    <header>
+        <nav class="nav">
+            <a href="" class="logo"><img src="assets/img/logo.png" alt="Logo NavBar"></a>
+
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
             </div>
-        </section>
+
+            <div class="nav-link hide">
+                <a href="#">Acceuil</a>
+                <a href="#">Librairie</a>
+                <a href="#">Evénement</a>
+                <a href="#">Forum</a>
+                <a href="#">Coffee Shop</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+
+    
+    <section class="hero">
+        <video loop="loop"  autoplay="autoplay" muted> 
+         <source  src="assets/video/homepage_header_video.mp4" type="video/mp4"/>
+        </video>
+
+        <div class="content">
+            <h1 class="princialTitle">Le temps d'un instant</h1>
+            <!--<p>Ouvert de puis 2020, le Temps d’un instant est un café littéraire 
+                situé dans le XXème arrondissement de Paris</p>-->
+        </div>
+
+        
+        
+    </section>
+   <div class="divClass">
+        <p>Ouvert depuis 2020,<strong> Le temps d'un instant</strong> est un <strong>café littéraire</strong>
+            situé dans le XXème arrondissement. </p>
+            <button>En savoir +</button>
+        </div>
 
     <section class="titleConcept">
         <div class="lineBlack"></div>
@@ -27,30 +60,53 @@
 
 
    <section class="main">
-    <div class="divCoffee">
-        <img class="logoTass" src="assets/img/Logo Tasse .png" alt="Loge d'une tasse" >
-        <p> Nous sommes plus qu'un simple café, nous sommes un café littéraire.
-             Ici, chaque tasse de café est une nouvelle histoire à découvrir, 
-             chaque moment passé est une page tournée de votre journée.</p>
-    </div>
 
     <div class="divCoffee">
-        <img class="logoLivre" src="assets/img/Logo Livre.png" alt="logo d'un livre">
+        <a href=""><img class="logoLivre" src="assets/icons /books.gif" alt="logo d'un livre"></a>
         <p> Ici, les étagères regorgent d'oeuvres qui attendent d'être découvert.
             De grands classiques aux derniers best-sellers, de la poésie à la science-fiction,
              nous offrons un monde de littérature à explorer.
              </p>
             </div>
 
-    <div class="divCoffee">
-        <img class="logoMeet" src="assets/img/Logo Meet.png" alt="logo d'une tasse">
-        <p>Installez-vous confortablementdans nos fauteuils douillets,
+            <div class="divCoffee">
+       <a href=""><img class="logoMeet" src="assets/icons /customer.gif" alt="logo d'une tasse"></a>
+        <p>Installez-vous confortablement dans nos fauteuils douillets,
              commandez votre café préféré et laissez-vous emporer 
-             par les mots dans une ambiance chaleureuse. </p>
+             par nos événements. De la séance de dédicace d'un de vos auteurs préférés,
+            en passant par nos concerts privés.  </p>
     </div>
+
+    <div class="divCoffee">
+        <a href=""><img class="logoTass" src="assets/icons /Forum.gif" alt="Loge d'une tasse" ></a>
+        <p> Rejoignez notre forum !!!!  Pour échanger vos connaissances, trouvailles et coups de coeur, 
+            et surtout partager votre bonne humeur avec la communauté. Venez aussi découvrir nos dernières 
+        actualités et nous suivre sur nos réseaux sociaux. </p>
+    </div>
+
+
+    <div class="divCoffee">
+        <a href=""><img class="logoTass" src="assets/icons /coffee-cup.gif" alt="Loge d'une tasse" ></a>
+        <p> Nous sommes plus qu'un simple café, nous sommes un café littéraire.
+             Ici, chaque tasse de café est une nouvelle histoire à découvrir, 
+             chaque moment passé est une page tournée de votre journée.</p>
+    </div>
+
+    <div class="divCoffee">
+        <a href=""><img class="logoMeet" src="assets/icons /contact.gif" alt="logo d'une tasse"></a>
+         <p>Contactez-nous !!!!  Une équipe passionnée, spécialiée dans leur domaine unique, 
+            vous offre une expérience complète. Ensemble, nous sommes prêtes à vous accueillir 
+            dans un cadre chaleureux et convivial. Donc à très vite !!!! </p>
+     </div>
+ 
 </section>
     
 
+
 <footer></footer>
+
+
+    <script src="assets/scripts/navbar.js"></script>
 </body>
+
 </html>
