@@ -5,7 +5,7 @@
 * { 
     margin: 0 ;
     padding: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 
@@ -13,26 +13,6 @@
     --main-font-family: "Lato";
     --main-background-color: #f8f6f2;
     --quote-font-family: "Lily Script One";
-    /* --button-background-color: #C9DEB4; */
-
-    /* Style des titres /
-        --main-font: Lato;
-        --text-color: black; 
-        --h2-font-size: 0.8rem;
-        --h1-font-size: 2.3rem;
-    
-        / Style des images /
-        --img-widht: 90%;
-    
-        / Style du boutton */
-        /* --button-font-size: 0.7rem;
-        --button-background-color: #3A86FF;
-        --button-text-color: white; 
-        --button-width: 35%;
-        --button-height: 2rem;
-        --button-margin: 5%; */
-
-
 }
 
 
@@ -59,21 +39,6 @@ body {
     font-size: 2.3rem;
 }
 
-
-/* #site-search { 
-    margin: 15px 64px;
-    border-radius: 16px;
-    width: 70%;
-    padding: 8px;
-    align-items: center;
-}
-
-#search-btn { 
-   margin: 8px 160px;
-   align-items: center;
-   padding: 8px;
-} */
-
 .lol {
     display: flex;
     align-items: center;
@@ -98,21 +63,22 @@ body {
 
 #search-btn { 
     background: none;
-	color: #f8f6f2;
+	color: black;
 	border: none;
 	padding: 10px;
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
     border-radius:300px;
-    background-color: #C8B9AB;
+    background-color: #C9DEB4;
     padding: 10px 24px;
+    font-weight: 600;
 }
 
 
 
 #search-btn:hover {
-    background-color: #a68c77;
+    background-color: #9FCF89;
 }
 
 
@@ -136,7 +102,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 0.3rem solid; */
     border-color: #C8B9AB;
     border-radius: 8px;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
@@ -157,8 +122,9 @@ body {
 }
 
 .article button { 
-    background-color: #C8B9AB;
-    color: #f8f6f2;
+    background-color: #C9DEB4;
+    color: black;
+    font-weight: 600;
     font-family: var(--main-font-family);
     margin-top: 8px;
     padding: 12px;
@@ -271,6 +237,17 @@ footer > .logos {
 /* ***************************** Debut des Media Queries *****************************  */
 
 @media screen and (min-width: 401px) { 
+    .header { 
+        height: 80vh;
+        display: flex;
+        align-content: center;
+    }
+    
+
+    .header > h1 { 
+        font-size: 3rem;
+    }
+    
     .section_livres { 
         display: flex;
         flex-wrap: wrap;
@@ -300,8 +277,6 @@ footer > .logos {
         margin: 8px 150px;
         padding: 0;
         width: 75%;
-        /* margin-right: 25%;
-        margin-left: 25%; */
         }
 
  
