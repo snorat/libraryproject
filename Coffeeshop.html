@@ -1,28 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Shop</title>
     <link rel="stylesheet" href="assets/styles/coffeeshop.css">
+    <link rel="stylesheet" href="assets/styles/navbar.css">
 </head>
+
 <body>
-    <header></header>
-    <section class= "headercoffeeshop">
+    <!-- ********************************* DEBUT NAV BAR ********************************* -->
+    <header>
+        <nav class="nav">
+            <a href="" class="logo"><img src="assets/img/logo.png" alt=""></a>
+
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+
+            <div class="nav-link hide">
+                <a href="#">Acceuil</a>
+                <a href="#">Librairie</a>
+                <a href="#">Evénement</a>
+                <a href="#">Forum</a>
+                <a href="#">Coffee Shop</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ********************************* FIN NAV BAR ********************************* -->
+    <section class="headercoffeeshop">
         <h1>Coffee Shop</h1>
     </section>
     <main>
-        <section class="premiereBoisson">
-            <h2>Découvrez notre nouveauté du moment : "L'instant d'un rêve". Un délicieux frappé au chocolat, unique comme vous.</h2>
-            <img src="assets/img/Main_coffee.png" alt="1st drink">
+        <h2 id="ambiancetitre">Faites comme chez vous !</h2>
+        <div class="ambiance">
+            <video loop="ambiancevideo" autoplay="autoplay" muted>
+                <source src="assets/video/coffee_ambiance.mp4" type="video/mp4" />
+            </video>
+                <div class="quote">
+            <h3> « Heureux celui qui sait prendre son temps pour aller plus vite ! » </h3>
+            <h5> Proverbe inuit </h5>
+            <p> Le temps d'un instant est considéré comme un endroit chaleureux et accueillant où les gens peuvent se
+                détendre, socialiser et profiter d'une bonne tasse de café.<br> Que ce soit pour travailler, étudier, discuter avec des amis ou simplement se relaxer, Le temps d'un instant offre un cadre convivial pour
+                tout le monde.</p>
+            </div>
+        </div>
+
+         <!-- <div class="premiereBoisson">
+            <h2> L'instant d'un rêve</h2>
+            <img id="img1stdrink" src="assets/img/Main_coffee.png" alt="1st drink">
+            <p> Découvrez notre nouveauté du moment, un délicieux frappé au chocolat, unique comme vous ! </p>
             <button>En savoir plus</button>
-        </section>
+        </div>
+
+
+        <h2 id="leschouchous">Retrouvez également les chouchous <br> de nos habitués</h2>
+
         <section class="moreDrinks">
-            <h2>Retrouvez également les chouchous de nos habitués</h2>
-            <img src="assets/img/Les_chouchous_de_nos_abonnes1.png" alt="2nd drink">
-            <img src="assets/img/Les_chouchous_de_nos_abonnes2.png" alt="3rd drink">
-            <button>En savoir plus</button>
-        </section>
+            <div class="secondeBoisson">
+                <h2>Café Glassé</h2>
+                <img id="img2drink" src="assets/img/café_glassé_tabithaturner.avif" alt="2nd drink">
+                <button>En savoir plus</button>
+            </div>
+            <div class="troisiemeBoisson">
+                <h2>Waffle Frappucino</h2>
+                <img id="img3drink" src="assets/img/Les_chouchous_de_nos_abonnes1.png" alt="2nd drink">
+                <button>En savoir plus</button>
+            </div>
+            <div class="quatriemeBoisson">
+                <h2>Matcha Latte</h2>
+                <img id="img4drink" src="assets/img/matcha_latte_alana_harris.avif" alt="3rd drink">
+                <button>En savoir plus</button>
+            </div>
+        </section> -->
+
     </main>
 </body>
+<script src="assets/scripts/navbar.js"></script>
+
 </html>

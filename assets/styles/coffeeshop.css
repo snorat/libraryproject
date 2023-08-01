@@ -2,40 +2,55 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 1px solid red
+    /* border: 1px solid red */
     
 }
 :root {
+/* MOBILE */
     /* Style des titres */
     --main-font: Lato;
-    --text-color: black; 
-    --h2-font-size: 0.8rem;
+    --text-color: #333333; 
+    --h2-font-size: 1.4rem;
     --h1-font-size: 2.3rem;
 
     /* Style des images */
-    --img-widht: 90%;
+    --img-widht: 80%;
 
     /* Style du boutton */
-    --button-font-size: 0.7rem;
-    --button-background-color: #3A86FF;
-    --button-text-color: white; 
-    --button-width: 35%;
+    --button-font-size: 0.8rem;
+    --button-background-color:#C8B9AB;
+    --button-text-color: #F8F6F2; 
+    --button-border: solid #F8F6F2;
+    --button-border-radius: 0.3em;
+    --button-width: 50%;
     --button-height: 2rem;
-    --button-margin: 5%;
+    --button-margin: 5% 25% 5% 25%;;
+
+/* WEBSITE */
+    /* Style des titres */
+    --h1-font-size-web:3rem;
+    --h2-font-size-web: 1.6rem;
+
+    /* Styles des buttons*/
+    --button-width-web:25%;
+    --button-height-web: 3rem;
+    --button-font-size-web: 1rem;
+
+    /* Style des images */
+    --img-widht-web: 45%;
 }
 
 body {
-    background-color: #ABB6B6;
+    background-color: #F8F6F2;
+    
 }
 
 .headercoffeeshop {
-    background-image: url("assets/img/h1\ header.png");
+    background-image: url("/assets/img/h1\ header\ copie.png");
     background-size: cover;
-    /*filter: opacity(50%);*/
     display: flex;
     align-items: flex-end;
-    width: 100%;
-    height: 200px;
+    height: 250px;
     margin: auto;
     align-content: center;
     flex-direction: row;
@@ -50,7 +65,55 @@ body {
     text-align: center;
 }
 
-.premiereBoisson {
+.ambiance {
+    margin: auto;
+}
+.ambiance > video {
+    height: 400px;
+    width: 200px;
+    margin: 0;
+}
+
+
+#ambiancetitre {
+    font-size: var(--h2-font-size);
+    margin: auto;
+    padding: 10px;
+}
+
+.quote {
+    background-color: #FAEF9E;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;   
+}
+.quote > h3 {
+    font-family: var(--main-font);
+    font-size: 1.4em;
+    font-style: italic;
+    margin: revert;
+}
+
+.quote > h5 {
+    font-family: var(--main-font);
+    margin: 0px 8px 10px;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+.quote > p {
+    font-family: var(--main-font);
+    font-size: 1rem;
+    font-style: normal;
+}
+
+/* .premiereBoisson {
+    background-color: #C8B9AB;
+    border-radius: 0.3em;
+    /* margin: 12%; 
     display: flex;
     flex-direction: column ;
     display: flex;
@@ -66,11 +129,22 @@ body {
     font-family: var(--main-font);
     font-size: var(--h2-font-size);
     color: var(--text-color);
+    font-weight: lighter;
 }
 
 .premiereBoisson > img {
     width: var(--img-widht);
     margin: auto;
+    border-radius: inherit;
+}
+
+.premiereBoisson > p {
+    font-family: var(--main-font);
+    font-size: 0.66rem;
+    font-style: normal;
+    text-align: center;
+    padding: 12px;
+    color: var(--text-color);
 }
 
 .premiereBoisson > button {
@@ -78,14 +152,16 @@ body {
     height: var(--button-height);
     margin: var(--button-margin);
     background-color: var(--button-background-color);
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
     color: var(--button-text-color);
     font-family: var(--main-font);
     font-size: var(--button-font-size);
+    font-weight: bold;
 }
 
 .moreDrinks {
-    display: flex;
-    flex-direction: column ;
+    margin: 12%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -94,29 +170,283 @@ body {
     justify-content: center;
 }
 
-.moreDrinks > h2 {
-    padding: 30px 20px 20px 20px ;
+#leschouchous {
+    padding: 0px 25px;
+    text-align: center;
     font-family: var(--main-font);
     font-size: var(--h2-font-size);
     color: var(--text-color);
+   
+}
+.secondeBoisson {
+    background-color: #C8B9AB;
+    border-radius: 0.3em;
+    margin: 0px 0px 15px 0px;
+
+}
+.secondeBoisson > h2 {
+    padding: 20px 30px 20px;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: var(--h2-font-size);
+    color: var(--text-color);
+    font-weight: lighter;
 }
 
-.moreDrinks > img {
+.secondeBoisson > img {
     width: var(--img-widht);
-    margin: 10px;
+    margin: 0% 10%;
+    border-radius: inherit;
 }
 
-.moreDrinks > button {
+.secondeBoisson > button {
     width: var(--button-width);
     height: var(--button-height);
     margin: var(--button-margin);
     background-color: var(--button-background-color);
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
     color: var(--button-text-color);
     font-family: var(--main-font);
     font-size: var(--button-font-size);
+    font-weight: bold;
 }
 
-@media screen and (min-width: 25.063em) { 
-    .headercoffeeshop
+.troisiemeBoisson {
+    background-color: #C8B9AB;
+    border-radius: 0.3em;
+    margin: 15px 0px 15px 0px;
+}
+.troisiemeBoisson > h2 {
+    padding: 20px 30px 20px;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: var(--h2-font-size);
+    color: var(--text-color);
+    font-weight: lighter;
+}
+
+.troisiemeBoisson > img {
+    width: var(--img-widht);
+    margin: 0% 10%;
+    border-radius: inherit;
+}
+
+.troisiemeBoisson > button {
+    width: var(--button-width);
+    height: var(--button-height);
+    margin: var(--button-margin);
+    background-color: var(--button-background-color);
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    color: var(--button-text-color);
+    font-family: var(--main-font);
+    font-size: var(--button-font-size);
+    font-weight: bold;
+}
+
+.quatriemeBoisson {
+    background-color: #C8B9AB;
+    border-radius: 0.3em;
+    margin: 15px 0px 15px 0px;
+}
+.quatriemeBoisson > h2 {
+    padding: 20px 30px 20px;
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: var(--h2-font-size);
+    color: var(--text-color);
+    font-weight: lighter;
+}
+
+.quatriemeBoisson > img {
+    width: var(--img-widht);
+    margin: 0% 10%;
+    border-radius: inherit;
+}
+
+.quatriemeBoisson > button {
+    width: var(--button-width);
+    height: var(--button-height);
+    margin: var(--button-margin);
+    background-color: var(--button-background-color);
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    color: var(--button-text-color);
+    font-family: var(--main-font);
+    font-size: var(--button-font-size);
+    font-weight: bold;
+}
+
+/* WEBSITE */
+
+@media screen and (min-width: 401px) { 
+
+    body {
+        /* width: 1200px; */
+        align-items: center;
+    }
+    .headercoffeeshop > h1 {
+        font-size: var(--h1-font-size-web);
+        background-image: cover;
+    }
+
+    .ambiance {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    #ambiancetitre { 
+        font-size: var(--h2-font-size-web);
+        padding: 50px;
+    }
+
+    .ambiance > video {
+        height: 900px;
+        width: 800px;
+        /* margin: 0% 13% 8% 13%; */
+    }
+
+    .quote > h3 { 
+        font-size: var(--h2-font-size-web);
+        padding: 50px 0px 0px 0px;
+    }
+
+    .quote > h5 { 
+        font-size: 1.2rem;
+        padding: 0px 300px 30px ;
+    }
+    .quote > p {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    #leschouchous {
+        font-size: var(--h2-font-size-web);
+        padding: 50px;
+    }
+
+    .moreDrinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-content: space-between;
+
+    }
+
+    .premiereBoisson {
+        margin: auto;
+        width: 600px;
+    }
+
+    .premiereBoisson > img {
+        width: var(--img-widht-web);
+        margin: auto;
+    }
+
+    .premiereBoisson > h2 {
+        font-size: var(--h2-font-size-web);
+        padding: 60px;
+    }
+
+    .premiereBoisson > p {
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 5% 10% 0% 10%;
+        margin: 0px 50px 0 50px;
+    }
+    .premiereBoisson > button {
+        width: var(--button-width-web);
+        height: var(--button-height-web);
+        font-size: var(--button-font-size-web);
+    }
+
+    .secondeBoisson {
+        /* position: absolute; */
+        margin: 50px 10px 5px 50px;
+        width: 600px;
+    }
+
+    .secondeBoisson > img {
+        margin-left: 25%;
+        width: 50%;
+    }
+
+    .secondeBoisson > h2 {
+        font-size: var(--h2-font-size-web);
+        padding: 60px;
+    }
+
+    /* .secondeBoisson > p {
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 5% 10% 0% 10%;
+        margin: 0px 50px 0 50px;
+    } */
+    .secondeBoisson > button {
+        margin-left: 35%;
+        width: var(--button-width-web);
+        height: var(--button-height-web);
+        font-size: var(--button-font-size-web);
+    }
+
+    .troisiemeBoisson {
+        /* position: absolute; */
+        margin: 50px 10px 5px 50px;
+        width: 600px;
+    }
+
+    .troisiemeBoisson > img {
+        margin-left: 25%;
+        width: 50%;
+    }
+
+    .troisiemeBoisson > h2 {
+        font-size: var(--h2-font-size-web);
+        padding: 60px;
+    }
+
+    /* .secondeBoisson > p {
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 5% 10% 0% 10%;
+        margin: 0px 50px 0 50px;
+    } */
+    .troisiemeBoisson > button {
+        margin-left: 35%;
+        width: var(--button-width-web);
+        height: var(--button-height-web);
+        font-size: var(--button-font-size-web);
+    }
+
+    .quatriemeBoisson {
+        /* position: absolute; */
+        margin: 50px 10px 5px 50px;
+        width: 600px;
+    }
+
+    .quatriemeBoisson > img {
+        margin-left: 25%;
+        width: 50%;
+    }
+
+    .quatriemeBoisson > h2 {
+        font-size: var(--h2-font-size-web);
+        padding: 60px;
+    }
+
+    /* .secondeBoisson > p {
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 5% 10% 0% 10%;
+        margin: 0px 50px 0 50px;
+    } */
+    .quatriemeBoisson > button {
+        margin-left: 35%;
+        width: var(--button-width-web);
+        height: var(--button-height-web);
+        font-size: var(--button-font-size-web);
+    }
 
 }
