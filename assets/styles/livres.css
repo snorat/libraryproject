@@ -13,6 +13,8 @@
     --main-font-family: "Lato";
     --main-background-color: #f8f6f2;
     --quote-font-family: "Lily Script One";
+    --main-text-color: #333333;
+    --second-text-color: #666666;
 }
 
 
@@ -63,7 +65,7 @@ body {
 
 #search-btn { 
     background: none;
-	color: black;
+	color: var(--main-text-color);
 	border: none;
 	padding: 10px;
 	font: inherit;
@@ -78,7 +80,8 @@ body {
 
 
 #search-btn:hover {
-    background-color: #9FCF89;
+    background-color: #a68c77;
+    color: white;
 }
 
 
@@ -123,7 +126,7 @@ body {
 
 .article button { 
     background-color: #C9DEB4;
-    color: black;
+    color: var(--main-text-color);
     font-weight: 600;
     font-family: var(--main-font-family);
     margin-top: 8px;
@@ -136,6 +139,7 @@ body {
 
 button:hover {
     background-color: #a68c77;
+    color: var(--main-background-color);
 }
 
 
@@ -148,6 +152,9 @@ button:hover {
 .article h4 { 
     padding: 8px;
     text-align: center;
+    font-weight: lighter;
+    color:#666666;
+    font-family: var(--main-font-family);
 }
 
 
@@ -168,14 +175,14 @@ button:hover {
   
   .column > h2 {
   
-    color: #333333;
+    color: var(--main-text-color);
     text-align: center;
     margin-bottom: 15px;
   }
   
   .column > p {
   
-    color: #666666;
+    color: var(--second-text-color);
     font-size: 12px;
     line-height: 1.6;
   }
@@ -184,7 +191,7 @@ button:hover {
     flex: 1;
     height: 300px;
     text-align: center;
-    color: #666666;
+    color: var(--second-text-color);
   }
   
   .map iframe {
@@ -213,9 +220,23 @@ footer {
 
 footer > .logos { 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding-top: 16px;
     width: 100%;
+    color: black;
+}
+
+
+.fa-instagram{ 
+    color: #333333;
+}
+
+.fa-facebook { 
+    color: #333333;
+}
+
+.fa-linkedin { 
+    color: #333333;
 }
 
 #phrase { 
@@ -252,14 +273,10 @@ footer > .logos {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        flex-direction: row;
+        margin : 0 24px 48px
     }
 
     #phrase { 
-        font-family: var(--main-font-family);
-        font-weight: bold;
-        font-size: medium;
-        padding: 8px;
         text-align: left;
     }
 
@@ -267,24 +284,20 @@ footer > .logos {
     footer > .logos { 
         width: 20%;
         margin:0 auto;
+        justify-content: space-around;
     }
 
 
-    .lol{
+    .lol {
         display: flex;
         justify-content: space-between;
-        flex-direction: row;
-        margin: 8px 150px;
+        margin: 16px auto;
         padding: 0;
         width: 75%;
         }
 
- 
-    
-
     #search-btn { 
         margin: 8px;
-        align-items: center;
         padding: 16px 40px;
      }
 
