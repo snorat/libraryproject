@@ -1,11 +1,11 @@
     /* Styles pour la section "imagecforum" */
 .imageforum {
     background-size: cover;
-    height: 40vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("/assets/img/img-forum/roman-bozhko-OXXsAafHDeo-unsplash.jpg");
+    background-image: url("/assets/img/img-forum/roman-bozhko-OXXsAafHDeo-unsplash.png");
     opacity: 70%;
     
   }
@@ -292,12 +292,6 @@ footer > .logos {
 @media screen and (min-width: 770px){
 
 
-    /* .présentation-forum > p {
-
-        font-size: 2rem;
-
-    } */
-
 
 .flexconteneur {
     display: flex ;
@@ -312,7 +306,7 @@ footer > .logos {
  */
 .post-editor{
     margin: 30px 100px;
-    padding: 20px 150px;
+    padding: 50px 150px;
 }
 
 }

@@ -12,14 +12,14 @@ text-align: left;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/assets/img/timothy-barlin-GX4YM64o49U-unsplash.jpg");
+  background-image: url("/assets/img/img-contact/timothy-barlin-GX4YM64o49U-unsplash.png");
   opacity: 70%;
   width: 100%;
 }
 
 .imagecontact > h1 {
   font-size: var(--h1-font-size);
-  color: var(--text-color);
+  color: black;
 }
 
 /* Styles pour la section "présentation" */
