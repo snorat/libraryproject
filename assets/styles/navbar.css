@@ -22,7 +22,7 @@ body{
 }
 
 
-  /* styles header nav bar */
+/* styles header nav bar */
 .nav a{
     text-decoration: none;
     color: #000000 ;
@@ -35,21 +35,19 @@ header{
     background-color: #F6F4EF;
     width: 100%;
 
-
 } 
 
 
 /* styles navbar mobile first */
-  
-  
+
+
   .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
     height: 80px;
     width: 100%;
-    
+
 
   }
 
@@ -57,7 +55,7 @@ header{
     padding-left: 20px;
 
     }
-    
+
 .logo img{
   height: 65px;
   width: 65px;
@@ -70,7 +68,7 @@ header{
     padding-left: 20px;
     cursor: pointer;
   }
-  
+
   .hamburger .line {
     display: block;
     width: 40px;
@@ -80,37 +78,38 @@ header{
   }
 
   .nav-link {
-    position: absolute;
     width: 100%;
     top: 80px;
     background-color: #C9DEB4;
     position:absolute; z-index: 1;
 
-    
-    
+
+
   }
-  
+
   .nav-link a {
     display: block;
     text-align: center;
     padding: 10px 0;
   }
-  
+
   .nav-link a:hover {
     background-color: #9FCF89;
     color: white;
     font-weight: bold;
   }
-  
+
   .hide {
     display: none;
 
-  
+
   }
-  
-  /* styles format web */
+
+ /* styles format web */
 
   @media screen and (min-width: 1210px) {
+
+
     .nav-link {
       display: block;
       position: static;
@@ -118,12 +117,13 @@ header{
       margin-right: 20px;
       background: none;
     }
-  
+
     .nav-link a {
       display: inline-block;
-      padding: 15px 20px;
+      padding: 25px;
+      font-size: 1rem;
     }
-  
+
     .hamburger {
       display: none;
     }
