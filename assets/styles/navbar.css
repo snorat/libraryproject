@@ -10,7 +10,7 @@
 
 :root {
   --main-font: Lato;
-  --text-color: black; 
+  --text-color: #333333; 
   --button-font-size: 0.7rem;
   --button-background-color: #3A86FF;
   --button-text-color: white; 
@@ -27,14 +27,14 @@ body{
   /* styles header nav bar */
 .nav a{
     text-decoration: none;
-    color: #000000 ;
+    color: var(--text-color) ;
     font-size: 2rem;
     font-weight: lighter;
 }
 
 
 header{
-    background-color: #F6F4EF;
+    /* background-color: #F6F4EF; */
     width: 100%;
 
 
