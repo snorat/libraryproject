@@ -1,3 +1,6 @@
+* {
+  font-family: "lato";
+}
 .hero {
   height: 30vh;
   /*background-color: rgb(247, 219, 224);*/
@@ -39,7 +42,7 @@
 
 .divClass {
   /* position: absolute;*/
-  background-color: #d9d9d9;
+  background-color: #c8b9ab;
   margin-top: 20px;
   margin: auto;
   width: 90%;
@@ -50,13 +53,20 @@
 }
 
 .divClass > button {
-  /*background-color: #9fcf89;*/
-  background-color: #80c482;
+  /*background-color: #80c482;
   border-radius: 20px;
   color: black;
   font-weight: bolder;
   width: 40%;
-  line-height: 20px;
+  line-height: 20px;*/
+  font-size: 1rem;
+  background-color: #c9deb4;
+  color: black;
+  border: 2px solid #998070;
+  border-radius: 0.3em;
+  width: 150px;
+  height: 45px;
+  margin: 5px 15px 15px;
 }
 .divClass button:hover {
   /*background-color: #faef9e;*/
@@ -91,7 +101,8 @@ h2 {
 }
 
 .main {
-  background-color: #f2ecdf;
+  /*background-color: #f2ecdf;*/
+  background-color: #f8f6f2;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -124,10 +135,81 @@ h2 {
   padding: 0 50px 20px 50px;
 }
 
-footer {
-  height: 30px;
-  width: 100%;
+/*informations*/
+
+.informations {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f5eee4;
+  /*border: 1px solid #c8b9ab;*/
 }
+
+.column {
+  flex: 1;
+  padding: 50px;
+  border-right: 1px solid #ccc;
+  /*border: 1px solid #c8b9ab;*/
+}
+
+.column > h2 {
+  color: var(--main-text-color);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.column > p {
+  color: var(--second-text-color);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.map {
+  flex: 1;
+  height: 300px;
+  text-align: center;
+  color: var(--second-text-color);
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.column:last-child {
+  border-right: none;
+}
+/* Fin de la section information */
+
+/* Debut du footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+  background-color: #d7cbc1;
+  /* border: 1px solid #c8b9ab;*/
+}
+
+footer > .logos {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 16px;
+  width: 100%;
+  color: black;
+}
+
+.fa-brands {
+  color: #333333;
+}
+
+#phrase {
+  font-family: var(--main-font-family);
+  font-weight: bold;
+  font-size: medium;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Fin du footer **  */
 
 @media screen and (min-width: 1024px) {
   .hero {
