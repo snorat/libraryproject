@@ -1,6 +1,7 @@
 * {
   font-family: "lato";
 }
+
 .hero {
   height: 30vh;
   /*background-color: rgb(247, 219, 224);*/
@@ -14,6 +15,7 @@
   opacity: 0.8;
   background-color: #574941;
 }
+
 .princialTitle {
   font-size: 2.5rem;
   /*color: #faef9e;*/
@@ -37,7 +39,6 @@
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 2;
 }
 
 .divClass {
@@ -52,7 +53,7 @@
   align-items: flex-end;
 }
 
-.divClass > button {
+.divClass>button {
   /*background-color: #80c482;
   border-radius: 20px;
   color: black;
@@ -68,6 +69,7 @@
   height: 45px;
   margin: 5px 15px 15px;
 }
+
 .divClass button:hover {
   /*background-color: #faef9e;*/
   background-color: #faef9e;
@@ -125,13 +127,13 @@ h2 {
   border: 1px solid #998070;
 }
 
-.divCoffee a > img {
+.divCoffee a>img {
   width: 50px;
   height: 50px;
   margin-top: 30px;
 }
 
-.divCoffee > p {
+.divCoffee>p {
   padding: 0 50px 20px 50px;
 }
 
@@ -151,13 +153,13 @@ h2 {
   /*border: 1px solid #c8b9ab;*/
 }
 
-.column > h2 {
+.column>h2 {
   color: var(--main-text-color);
   text-align: center;
   margin-bottom: 15px;
 }
 
-.column > p {
+.column>p {
   color: var(--second-text-color);
   font-size: 12px;
   line-height: 1.6;
@@ -178,6 +180,7 @@ h2 {
 .column:last-child {
   border-right: none;
 }
+
 /* Fin de la section information */
 
 /* Debut du footer */
@@ -189,7 +192,7 @@ footer {
   /* border: 1px solid #c8b9ab;*/
 }
 
-footer > .logos {
+footer>.logos {
   display: flex;
   justify-content: space-evenly;
   padding-top: 16px;
@@ -215,6 +218,7 @@ footer > .logos {
   .hero {
     height: 94vh;
   }
+
   .hero video {
     width: 100%;
     object-fit: cover;
@@ -249,12 +253,12 @@ footer > .logos {
     border: 1px solid #574941;
   }
 
-  .divClass > p {
+  .divClass>p {
     font-size: 2.2rem;
     margin: 0 50px 50px 50px;
   }
 
-  .divClass > button {
+  .divClass>button {
     width: 200px;
     height: 40px;
     font-size: 20px;
@@ -266,19 +270,22 @@ footer > .logos {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
+
   .divCoffee {
     width: 500px;
     height: 450px;
   }
-  .divCoffee > p {
+
+  .divCoffee>p {
     padding: 0 70px 50px 70px;
     font-size: 25px;
   }
-  .divCoffee > a {
+
+  .divCoffee>a {
     padding: 40px 40px 0 40px;
   }
 
-  .divCoffee a > img {
+  .divCoffee a>img {
     width: 80px;
     height: 80px;
     margin-top: 30px;
