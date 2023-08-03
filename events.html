@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vidéoTextEssai</title>
-   <link rel="stylesheet" href="events.html">
+    <title>Events</title>
+    <link rel="stylesheet" href="assets/styles/events.css">
     <link rel="stylesheet" href="assets/styles/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
 </head>
 <body>
+    <!-- ********************************* DEBUT NAV BAR ********************************* -->
     <header>
         <nav class="nav">
             <a href="" class="logo"><img src="" alt="Le temps d'un instant"></a>
@@ -22,68 +24,109 @@
             <div class="nav-link hide">
                 <a href="#">Acceuil</a>
                 <a href="#">Librairie</a>
-                <a href="#">Evénement</a>
+                <a href="#">Évènement</a>
                 <a href="#">Forum</a>
                 <a href="#">Coffee Shop</a>
                 <a href="#">Contact</a>
             </div>
         </nav>
     </header>
+    <!-------------------------Fin de NAVBAR------------------------>
 
 
-<main>
-    <h1>Le temps d'un nstant</h1>
-</main>
+    <h1>Évènements</h1>
 
-
-
-<!-- ** DEBUT SECTION INFORMATIONS ** -->
-
-<section class="informations">
-
-    <div class="column">
-        <h2>Contactez-nous</h2>
-        <p>Pour toute question ou demande d'information, n'hésitez pas à nous contacter. <br> 
-            Notre équipe est là pour vous aider. <br>
-           Numéro de téléphone : 01 24 23 25 33 <br>
-           Nous serions ravis d'avoir de vos nouvelles et de répondre à vos demandes ! <br>
+    <div class="lol">
+        <input type="search" id="site-search" name="q" placeholder="Rechercher un livre">
+        <button id="search-btn">Rechercher</button>  
     </div>
+    
+    <section class="affiche">
+        
+            <h4>23 Avril 2023</h4>
+                <h3>WORLD BOOK DAY</h3>
+                    <button id="learn-more">En savoir plus</button>
 
-    <div class="column">
-        <h2>Horaires d'ouverture :</h2>
-        <p>Nous sommes ouverts du lundi au samedi de 10h00 à 19h00. <br>
-            Notre équipe est heureuse de vous accueillir pendant ces horaires pour répondre à vos besoins. <br>
-            Nous sommes fermés  le dimanche.</p>
-    </div>
+    </section>
+    <article class="article event-1">
+        <img src="assets/img/img-events/reading-books.png" alt="book-discount">
+        
+    </article>
 
-    <div class="column">
-      <h2>Adresse</h2>
-      <div class="map">
-       Venez nous rendre visite au 44 rue Alphonse Penaud 75020 Paris.
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10497.75122595533!2d2.3958317689226383!3d48.868929941334024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d9bebbe9d01%3A0x77eea7c448367efe!2s44%20Rue%20Alphonse%20Penaud%2C%2075020%20Paris!5e0!3m2!1sfr!2sfr!4v1690499148340!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-</section>
+    <article class="article event-2">
+        <img src="assets/img/img-events/book-discount.png" alt="book-discount">
+        
+    </article>
 
-<!-- ** FIN SECTION INFORMATIONS ** -->
-<!-- ** DEBUT DU FOOTER ** -->
-<footer>
-    <div class="logos">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
-    </div>
-    <div>
-        <p id="phrase">© Dream Library by the Dream Team</p>
-    </div>
+    <article class="article event-3">
+        <img src="assets/img/img-events/family-event.png" alt="family-event">
+        
+    </article>
 
- 
-</footer>
-<!-- ** FIN DU FOOTER ** -->
+    <article class="article event-4">
+        <!-- <div>
+            <h4>Des moments pour s'évader</h4>
+        </div> -->
+    
+            <img src="assets/img/img-events/concert-event.png" alt="family-event">
+        
+        
+    </article>
+
+    <section>
+
+    </section>
+    
 
 
+
+    <!-- ********************************* DEBUT SECTION INFORMATIONS ********************************* -->
+
+    <section class="informations">
+
+        <div class="column">
+            <h2>Contactez-nous</h2>
+            <p>Pour toute question ou demande d'information, n'hésitez pas à nous contacter. <br> 
+                Notre équipe est là pour vous aider. <br>
+               Numéro de téléphone : 01 24 23 25 33 <br>
+               Nous serions ravis d'avoir de vos nouvelles et de répondre à vos demandes ! <br>
+        </div>
+        
+        <div class="column">
+            <h2>Horaires d'ouverture :</h2>
+            <p>Nous sommes ouverts du lundi au samedi de 10h00 à 19h00. <br>
+                Notre équipe est heureuse de vous accueillir pendant ces horaires pour répondre à vos besoins. <br>
+                Nous sommes fermés  le dimanche.</p>
+        </div>
+        
+        <div class="column">
+          <h2>Adresse</h2>
+          <div class="map">
+           Venez nous rendre visite au 44 rue Alphonse Penaud 75020 Paris.
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10497.75122595533!2d2.3958317689226383!3d48.868929941334024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d9bebbe9d01%3A0x77eea7c448367efe!2s44%20Rue%20Alphonse%20Penaud%2C%2075020%20Paris!5e0!3m2!1sfr!2sfr!4v1690499148340!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+    </section>
+
+<!-- ********************************* FIN SECTION INFORMATIONS ********************************* -->
+
+
+
+    <!-- ********************************* DEBUT DU FOOTER ********************************* -->
+    <footer>
+                <div class="logos">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
+                </div>  
+                <div>
+                    <p id="phrase">© Dream Library by the Dream Team</p>
+                </div>
+                
+        <!-- </div> -->
+    </footer>
+    <!-- ********************************* FIN DU FOOTER ********************************* -->
 
     <script src="assets/scripts/navbar.js"></script>
 </body>
-
 </html>
