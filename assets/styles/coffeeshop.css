@@ -1,52 +1,55 @@
-* { 
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 1px solid red
-    
+    /* border: 1px solid red */
 }
+
 :root {
-/* MOBILE */
+    /* MOBILE */
     /* Style des titres */
     --main-font: Lato;
-    --text-color: #333333; 
+    --text-color: #333333;
     --h2-font-size: 1.4rem;
-    --h1-font-size: 2.3rem;
+    --h1-font-size: 2.1rem;
     --font-size-mobile: 1rem;
 
-    /* Style des images */
-    --img-widht: 250px;
+
+    --carte-border-radius: 0.3em;
 
     /* Style du boutton */
     --button-font-size: 1rem;
-    --button-background-color:#C8B9AB;
-    --button-text-color: #F8F6F2; 
+    --button-background-color: #C8B9AB;
+    --button-text-color: #F8F6F2;
     --button-border: solid #F8F6F2;
     --button-border-radius: 0.3em;
     --button-width: 150px;
     --button-height: 45px;
     --button-margin: 5px 15px 15px;
 
-/* WEBSITE */
+    /* WEBSITE */
     /* Style des titres */
-    --h1-font-size-web:3rem;
+    --h1-font-size-web: 3rem;
     --h2-font-size-web: 2.3rem;
-    --font-size-web:1.3rem;
+    --font-size-web: 1.3rem;
 
     /* Styles des buttons*/
-    --button-width-web:250px;
+    --button-width-web: 250px;
     --button-height-web: 3rem;
     --button-font-size-web: 1.2rem;
 
-    /* Style des images */
+    /* Style des images 
     --img-margin-web: 0px 150px;
     --img-width-web-: 280px;
-    --img-widht-web: 45%;
+    --img-widht-web: 45%;*/
 }
 
 body {
+
     background-color: #F8F6F2;
-    
+    font-family: var(--main-font);
+    color: var(--text-color);
+
 }
 
 .headercoffeeshop {
@@ -59,322 +62,167 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    /* background-color: red; */
+    width: 100%;
 }
 
-.headercoffeeshop > h1 {
-    font-family: var(--main-font);
+.headercoffeeshop>h1 {
     font-size: var(--h1-font-size);
-    color: var(--text-color);
-    text-align: center;
-}
-
-#ambiancetitre {
-    font-size: var(--h2-font-size);
-    margin: 15px;
-    padding: 10px;
-    text-align: center;
 }
 
 .ambiance {
-    margin: auto;
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
-    align-items: center;
 }
-.ambiance > video {
-    height: 400px;
-    width: 250px;
-    margin: 4px 15px 30px 15px;
+
+video {
+    width: 100%;
+}
+
+main>h2 {
+    text-align: center;
+    font-size: var(--h2-font-size);
+    padding: 15px;
 }
 
 .quote {
     background-color: #C9DEB4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    
-}
-.quote > h3 {
-    font-family: var(--main-font);
-    font-size: 1.4em;
-    font-style: italic;
-    margin: revert;
-    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
 }
 
 .quote > h5 {
-    font-family: var(--main-font);
-    color: var(--text-color); 
-    margin: 0px 8px 10px;
     text-align: right;
-    font-size: 0.8rem;
+    padding: 0.5rem;
 }
 
-.quote > p {
-    font-family: var(--main-font);
-    font-size: var(--font-size-mobile);
-    color: var(--text-color); 
-    font-style: normal;
-    margin: revert;
-    padding: 10px;
+.cards>.card img {
+    width: 100%;
+    height: auto;
 }
 
-.premiereBoisson {
+.card {
     background-color: #C8B9AB;
-    border-radius: 0.3em;
-    margin: 40px; 
-    display: flex;
-    flex-direction: column ;
-    align-content: center;
-    align-items: center;
-}
-#titrePremiereBoisson {
-    padding: 30px 30px 20px;
     text-align: center;
-    font-family: var(--main-font);
-    font-size: var(--h2-font-size);
-    color: var(--text-color);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: var(--carte-border-radius);
+}
+
+
+.card-img {
+    height: 25rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product1 {
+    background-image: url("/assets/img/Main_coffee.png");
+}
+
+.product2 {
+    background-image: url("/assets/img/café_glassé_tabithaturner.avif");
+}
+
+.product3 {
+    background-image: url("/assets/img/Les_chouchous_de_nos_abonnes1.png");
+}
+
+.product4 {
+    background-image: url("/assets/img/matcha_latte_alana_harris.avif");
+}
+
+.card button {
+    background: none;
+    border-radius: var(--button-border-radius);
+    color: #F8F6F2;
+    padding: 1rem 2.5rem;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    border: 2px solid #F8F6F2;
+    margin: 3rem 0;
+}
+
+.card button :hover {
+    background-color: #9FCF89;
+    color: #998070;
+}
+
+
+.card h2 {
+    padding: 2rem;
     font-weight: lighter;
 }
 
-.premiereBoisson > img {
-    width: var(--img-widht);
-    border-radius: inherit;
-}
-
-.premiereBoisson > p {
-    font-family: var(--main-font);
+.card p {
+    padding: 1rem;
     font-size: var(--font-size-mobile);
-    font-style: normal;
-    text-align: center;
-    padding: 12px 15px;
-    color: var(--text-color); 
-}
-
-.premiereBoisson > button {
-    width: var(--button-width);
-    height: var(--button-height);
-    margin: var(--button-margin);
-    background-color: var(--button-background-color);
-    border: var(--button-border);
-    border-radius: var(--button-border-radius);
-    color: var(--button-text-color);
-    font-family: var(--main-font);
-    font-size: var(--button-font-size);
-    font-weight: bold;
-}
-
-#leschouchous {
-    padding: 0px 25px;
-    text-align: center;
-    font-family: var(--main-font);
-    font-size: var(--h2-font-size);
-    color: var(--text-color);
-   
-}
-
- .moreDrinks {
-    border-radius: 0.3em;
-    margin: 40px; 
-    display: flex;
-    flex-direction: column ;
-    align-content: center;
-}
-
-.secondeBoisson {
-    background-color: #C8B9AB;
-    border-radius: 0.3em;
-    display: flex;
-    flex-direction: column ;
-    align-items: center;
-    margin: 0px 0px 15px;
-
-}
-.secondeBoisson > h2 {
-    padding: 20px 30px 20px;
-    text-align: center;
-    font-family: var(--main-font);
-    font-size: var(--h2-font-size);
-    color: var(--text-color);
-    font-weight: lighter;
-}
-
-.secondeBoisson > img {
-    width: var(--img-widht);
-    margin: 0% 10%;
-    border-radius: inherit;
-}
-
-.secondeBoisson > p {
-    font-family: var(--main-font);
-    font-size: var(--font-size-mobile);
-    font-style: normal;
-    text-align: center;
-    padding: 12px 15px;
-    color: var(--text-color);
-}
-
-
-.secondeBoisson > button {
-    width: var(--button-width);
-    height: var(--button-height);
-    margin: var(--button-margin);
-    background-color: var(--button-background-color);
-    border: var(--button-border);
-    border-radius: var(--button-border-radius);
-    color: var(--button-text-color);
-    font-family: var(--main-font);
-    font-size: var(--button-font-size);
-    font-weight: bold;
-}
-
-.troisiemeBoisson {
-    background-color: #C8B9AB;
-    border-radius: 0.3em;
-    display: flex;
-    flex-direction: column ;
-    align-items: center;
-}
-.troisiemeBoisson > h2 {
-    padding: 20px 30px 20px;
-    text-align: center;
-    font-family: var(--main-font);
-    font-size: var(--h2-font-size);
-    color: var(--text-color);
-    font-weight: lighter;
-}
-
-.troisiemeBoisson > img {
-    width: var(--img-widht);
-    margin: 0% 10%;
-    border-radius: inherit;
-}
-
-.troisiemeBoisson > p {
-    font-family: var(--main-font);
-    font-size: var(--font-size-mobile);
-    font-style: normal;
-    text-align: center;
-    padding: 12px 15px;
-    color: var(--text-color);
-}
-
-.troisiemeBoisson > button {
-    width: var(--button-width);
-    height: var(--button-height);
-    margin: var(--button-margin);
-    background-color: var(--button-background-color);
-    border: var(--button-border);
-    border-radius: var(--button-border-radius);
-    color: var(--button-text-color);
-    font-family: var(--main-font);
-    font-size: var(--button-font-size);
-    font-weight: bold;
-}
-
-.quatriemeBoisson {
-    background-color: #C8B9AB;
-    border-radius: 0.3em;
-    display: flex;
-    flex-direction: column ;
-    align-items: center;
-    margin: 15px 0px;
-}
-.quatriemeBoisson > h2 {
-    padding: 20px 30px 20px;
-    text-align: center;
-    font-family: var(--main-font);
-    font-size: var(--h2-font-size);
-    color: var(--text-color);
-    font-weight: lighter;
-}
-
-.quatriemeBoisson > img {
-    width: var(--img-widht);
-    margin: 0% 10%;
-    border-radius: inherit;
-}
-
-.quatriemeBoisson > p {
-    font-family: var(--main-font);
-    font-size: var(--font-size-mobile);
-    font-style: normal;
-    text-align: center;
-    padding: 12px 15px;
-    color: var(--text-color);
-}
-
-.quatriemeBoisson > button {
-    width: var(--button-width);
-    height: var(--button-height);
-    margin: var(--button-margin);
-    background-color: var(--button-background-color);
-    border: var(--button-border);
-    border-radius: var(--button-border-radius);
-    color: var(--button-text-color);
-    font-family: var(--main-font);
-    font-size: var(--button-font-size);
-    font-weight: bold;
 }
 
 /* Section informations */
-        /* Styles pour la section "informations"  */
+/* Styles pour la section "informations"  */
 
 .informations {
     display: flex;
     flex-wrap: wrap;
     background-color: #f5eee4;
-  }
+}
 
-  .column {
-    flex: 1; 
+.column {
+    flex: 1;
     padding: 50px;
     border-right: 1px solid #ccc;
-  }
+}
 
-  .column > h2 {
+.column>h2 {
 
     color: var(--main-text-color);
     text-align: center;
     margin-bottom: 15px;
-  }
+}
 
-  .column > p {
+.column>p {
 
     color: var(--second-text-color);
     font-size: 12px;
     line-height: 1.6;
-  }
+}
 
-  .map {
+.map {
     flex: 1;
     height: 300px;
     text-align: center;
     color: var(--second-text-color);
-  }
+}
 
-  .map iframe {
+.map iframe {
     width: 100%;
     height: 100%;
-  }
+}
 
-  .column:last-child {
+.column:last-child {
     border-right: none;
-  }
-/* / ** Fin de la section information **/ 
+}
+
+/* / ** Fin de la section information **/
 
 /* Debut du footer */
 footer {
     display: flex;
     flex-direction: column;
     padding: 0 16px;
-    background-color:#D7CBC1;
+    background-color: #D7CBC1;
 }
 
 
-footer > .logos { 
+footer>.logos {
     display: flex;
     justify-content: space-evenly;
     padding-top: 16px;
@@ -382,11 +230,11 @@ footer > .logos {
     color: black;
 }
 
-.fa-brands { 
+.fa-brands {
     color: #333333;
 }
 
-#phrase { 
+#phrase {
     font-family: var(--main-font-family);
     font-weight: bold;
     font-size: medium;
@@ -394,199 +242,81 @@ footer > .logos {
     text-align: center;
 }
 
-/* Fin du footer*/ 
+/* Fin du footer*/
 
 
 /* -------WEBSITE------------ */
 
-@media screen and (min-width: 401px) { 
+@media only screen and (min-width: 401px) {
 
-    body {
-        align-items: center;
+    main>h2 {
+        margin: 3rem;
+        font-size: var(--h2-font-size-web);
     }
 
     .headercoffeeshop {
-        height: 70vh;
+        height: 80vh;
+        background-attachment: fixed;
     }
-    .headercoffeeshop > h1 {
+
+    .headercoffeeshop>h1 {
         font-size: var(--h1-font-size-web);
-        background-image: cover;
-        
+    }
+    
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 34%;
+    }
+
+    .card>h2 {
+        font-size: var(--h2-font-size-web);
+    }
+
+    .card>p {
+        font-size: var(--font-size-web);
+    }
+
+    .card-img {
+        height: 30rem;
+        width: 80%;
+    }
+
+    .card button {
+        font-size: var(--font-size-web);
+    }
+
+    video {
+        width: inherit;
+        height: 50rem;
     }
 
     .ambiance {
-        display: flex;
-        justify-content: space-around;
         flex-direction: row;
-        align-items: stretch;
-        margin: 120px;
-    }
-
-    #ambiancetitre { 
-        font-size: var(--h2-font-size-web);
-        padding: 50px;
-        margin: 70px 0px 0px;
-
-    }
-
-    .ambiance > video {
-        height:1000px;
-        width: 800px;
-        margin: 0px 2px;
+        margin: 5rem 6rem;
     }
 
     .quote {
-        margin-left: 4rem;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 5rem
     }
 
-    .quote > h3 { 
+    .quote>p {
+        font-size: var(--font-size-web);
+    }
+    .quote>h3 {
         font-size: var(--h2-font-size-web);
-        padding: 50px 0px 0px 0px;
     }
-
-    .quote > h5 { 
+    .quote>h5 {
         font-size: 1.2rem;
-        margin: 0px 48px 10px;
     }
-
-    .quote > p {
-        font-size: var(--font-size-web);
-        text-align: center;
-    }
-
-    #leschouchous {
-        font-size: var(--h2-font-size-web);
-        padding: 50px;
-    }
-
-    .premiereBoisson {
-        margin: auto;
-        width: 75%;
-        display: flex;
-        align-content: flex-start;
-        flex-direction: row;
-        justify-content: space-between;
-        border-radius: 0px 0px 8px 8px;
-    }
-
-    #img1stdrink {
-        margin: 50px;
-        width: var(--img-widht-web);
-        height: 450px;
-    }
-
-    #titrePremiereBoisson {
-        font-size: var(--h2-font-size-web);
-        padding: 16px;
-        margin: 0 225px;
-        background-color: #C8B9AB;
-        border-radius: 8px 8px 0px 0px;
-    }
-
-
-    .premiereBoisson > p {
-        font-size: var(--font-size-web);
-        text-align: center;
-        padding: 30px 20px;
-        margin: 0px 50px 0 50px;
-    }
-    .premiereBoisson > button {
-        width: var(--button-width-web);
-        height: var(--button-height-web);
-        font-size: var(--button-font-size-web);
-    }
-
-    .moreDrinks {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-content: space-between;
-        margin:60px;
-    }
-
-    .secondeBoisson {
-        margin: 50px 10px 5px 45px;
-        width: 510px;
-    }
-
-    .secondeBoisson > img {
-        margin:var(--img-margin-web);
-        width: var(--img-width-web-);
-    }
-
-    .secondeBoisson > h2 {
-        font-size: var(--h2-font-size-web);
-        padding: 60px;
-    }
-
-   .secondeBoisson > p {
-    font-size: var(--font-size-web);
-    text-align: center;
-    padding: 30px 20px;
-    margin: 0px 50px 0 50px;
-    } 
-
-    .secondeBoisson > button {
-        width: var(--button-width-web);
-        height: var(--button-height-web);
-        font-size: var(--button-font-size-web);
-    }
-
-    .troisiemeBoisson {
-        margin: 50px 10px 5px 50px;
-        width: 510px;
-    }
-
-    .troisiemeBoisson > img {
-        margin:var(--img-margin-web);
-        width: var(--img-width-web-);
-        height: 385px;
-    }
-
-    .troisiemeBoisson > h2 {
-        font-size: var(--h2-font-size-web);
-        padding: 60px;
-    }
-
-    .troisiemeBoisson > p {
-        font-size: var(--font-size-web);
-        text-align: center;
-        padding: 30px 20px;
-        margin: 0px 50px 0 50px;
-    } 
-    .troisiemeBoisson > button {
-        width: var(--button-width-web);
-        height: var(--button-height-web);
-        font-size: var(--button-font-size-web);
-    }
-
-    .quatriemeBoisson {
-        margin: 50px 40px 5px 50px;
-        width: 510px;
-    }
-
-    .quatriemeBoisson > img {
-        margin:var(--img-margin-web);
-        width: var(--img-width-web-);
-        height: 380px;
-    }
-
-    .quatriemeBoisson > h2 {
-        font-size: var(--h2-font-size-web);
-        padding: 60px;
-    }
-
-    .quatriemeBoisson > p {
-        font-size: var(--font-size-web);
-        text-align: center;
-        padding: 30px 20px;
-        margin: 0px 50px 0 50px;
-    } 
-    .quatriemeBoisson > button {
-        width: var(--button-width-web);
-        height: var(--button-height-web);
-        font-size: var(--button-font-size-web);
-    }
-
 }
