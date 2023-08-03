@@ -8,11 +8,12 @@
 
 :root {
   --main-font: Lato;
+  --button-font-size: 1rem;
   --text-color: #333333; 
   --button-font-size: 0.7rem;
   --button-background-color: #f8f6f2
   --button-text-color: white; 
-  --h2-font-size: 0.8rem;
+  --h2-font-size: 1.4em;
   --h1-font-size: 2.3rem;
 }
 
@@ -21,8 +22,6 @@ body{
   background-color: #F8F6F2;
 }
 
-
-  /* styles header nav bar */
 .nav a{
     text-decoration: none;
     color: var(--text-color) ;
@@ -37,8 +36,8 @@ header{
 
 
 /* styles navbar mobile first */
-  
-  
+
+
   .nav {
     display: flex;
     justify-content: space-between;
@@ -51,7 +50,7 @@ header{
     padding-left: 20px;
 
     }
-    
+
 .logo img{
   height: 65px;
   width: 65px;
@@ -64,7 +63,7 @@ header{
     padding-left: 20px;
     cursor: pointer;
   }
-  
+
   .hamburger .line {
     display: block;
     width: 40px;
@@ -79,31 +78,25 @@ header{
     top: 80px;
     background-color: #C9DEB4;
     position:absolute; z-index: 1;
-
-    
-    
   }
-  
+
   .nav-link a {
     display: block;
     text-align: center;
     padding: 10px 0;
   }
-  
+
   .nav-link a:hover {
     background-color: #9FCF89;
     color: white;
     font-weight: bold;
   }
-  
+
   .hide {
     display: none;
 
-  
-  }
-  
 
-  /* styles format web */
+  }
 
   @media screen and (min-width: 1210px) {
 
@@ -115,14 +108,15 @@ header{
       margin-right: 20px;
       background: none;
     }
-  
+
     .nav-link a {
       display: inline-block;
       padding: 25px;
       font-size: 1rem;
     }
-  
+
     .hamburger {
       display: none;
     }
   }
+
