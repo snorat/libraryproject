@@ -1,23 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Home</title>
-    <link rel="stylesheet" href="/assets/styles/style.css">
+    <title>vidéoTextEssai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/styles/homePage.css">
+    <link rel="stylesheet" href="assets/styles/navbar.css">
 </head>
 
 <body>
-    <header></header>
-    <section class="header">
-        <img src="assets/img/imagePrincipale.png" alt=" Intérieur d'un coffe shop librairie">
-            <h1>Le temps d'un instant</h1>
-            <div class="divClass">
-            <p>Ouvert depuis 2020,<strong> Le temps d'un instant</strong> est un <strong>café littéraire</strong>
-                situé dans le XXème arrondissement. </p>
-                <button>En savoir +</button>
+    <header>
+        <nav class="nav">
+            <a href="" class="logo"><img src="" alt="Le temps d'un instant"></a>
+
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
             </div>
-        </section>
+
+            <div class="nav-link hide">
+                <a href="#">Acceuil</a>
+                <a href="#">Librairie</a>
+                <a href="#">Evénement</a>
+                <a href="#">Forum</a>
+                <a href="#">Coffee Shop</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <section class="hero">
+        <video loop="loop" autoplay="autoplay" muted>
+            <source src="assets/video/homepage_header_video.mp4" type="video/mp4" />
+        </video>
+
+        <div class="content">
+            <h1 class="princialTitle">Le temps d'un instant</h1>
+            <!--<p>Ouvert de puis 2020, le Temps d’un instant est un café littéraire
+                situé dans le XXème arrondissement de Paris</p>-->
+        </div>
+
+
+
+    </section>
+    <div class="divClass">
+        <p>Ouvert depuis 2020,<strong> Le temps d'un instant</strong> est un <strong>café littéraire</strong>
+            situé dans le XXème arrondissement. </p>
+        <button>En savoir +</button>
+    </div>
 
     <section class="titleConcept">
         <div class="lineBlack"></div>
@@ -26,31 +67,104 @@
     </section>
 
 
-   <section class="main">
-    <div class="divCoffee">
-        <img class="logoTass" src="assets/img/Logo Tasse .png" alt="Loge d'une tasse" >
-        <p> Nous sommes plus qu'un simple café, nous sommes un café littéraire.
-             Ici, chaque tasse de café est une nouvelle histoire à découvrir, 
-             chaque moment passé est une page tournée de votre journée.</p>
-    </div>
+    <section class="main owl-carousel owl-theme">
 
-    <div class="divCoffee">
-        <img class="logoLivre" src="assets/img/Logo Livre.png" alt="logo d'un livre">
-        <p> Ici, les étagères regorgent d'oeuvres qui attendent d'être découvert.
-            De grands classiques aux derniers best-sellers, de la poésie à la science-fiction,
-             nous offrons un monde de littérature à explorer.
-             </p>
+        <div class="divCoffee">
+            <a href=""><img class="logoLivre" src="assets/icons/books.gif" alt="logo d'un livre"></a>
+            <p> Ici, les étagères regorgent d'oeuvres qui attendent d'être découvert.
+                De grands classiques aux derniers best-sellers, de la poésie à la science-fiction,
+                nous offrons un monde de littérature à explorer.
+            </p>
+        </div>
+
+        <div class="divCoffee">
+            <a href=""><img class="logoMeet" src="assets/icons/customer.gif" alt="logo d'une tasse"></a>
+            <p>Installez-vous confortablement dans nos fauteuils douillets,
+                commandez votre café préféré et laissez-vous emporer
+                par nos événements. De la séance de dédicace d'un de vos auteurs préférés,
+                en passant par nos concerts privés. </p>
+        </div>
+
+        <div class="divCoffee">
+            <a href=""><img class="logoTass" src="assets/icons/Forum.gif" alt="Loge d'une tasse"></a>
+            <p> Rejoignez notre forum !!!! Pour échanger vos connaissances, trouvailles et coups de coeur,
+                et surtout partager votre bonne humeur avec la communauté. Venez aussi découvrir nos dernières
+                actualités et nous suivre sur nos réseaux sociaux. </p>
+        </div>
+
+
+        <div class="divCoffee">
+            <a href=""><img class="logoTass" src="assets/icons/coffee-cup.gif" alt="Loge d'une tasse"></a>
+            <p> Nous sommes plus qu'un simple café, nous sommes un café littéraire.
+                Ici, chaque tasse de café est une nouvelle histoire à découvrir,
+                chaque moment passé est une page tournée de votre journée.</p>
+        </div>
+
+        <div class="divCoffee">
+            <a href=""><img class="logoMeet" src="assets/icons/contact.gif" alt="logo d'une tasse"></a>
+            <p>Contactez-nous !!!! Une équipe passionnée, spécialiée dans leur domaine,
+                vous offre une expérience unique. Ensemble, nous sommes prêtes à vous accueillir
+                dans un cadre chaleureux et convivial. Donc à très vite !!!! </p>
+        </div>
+
+    </section>
+
+
+    <!-- ** DEBUT SECTION INFORMATIONS ** -->
+
+    <section class="informations">
+
+        <div class="column">
+            <h2>Contactez-nous</h2>
+            <p>Pour toute question ou demande d'information, n'hésitez pas à nous contacter. <br>
+                Notre équipe est là pour vous aider. <br>
+                Numéro de téléphone : 01 24 23 25 33 <br>
+                Nous serions ravis d'avoir de vos nouvelles et de répondre à vos demandes ! <br>
+        </div>
+
+        <div class="column">
+            <h2>Horaires d'ouverture :</h2>
+            <p>Nous sommes ouverts du lundi au samedi de 10h00 à 19h00. <br>
+                Notre équipe est heureuse de vous accueillir pendant ces horaires pour répondre à vos besoins. <br>
+                Nous sommes fermés le dimanche.</p>
+        </div>
+
+        <div class="column">
+            <h2>Adresse</h2>
+            <div class="map">
+                Venez nous rendre visite au 44 rue Alphonse Penaud 75020 Paris.
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10497.75122595533!2d2.3958317689226383!3d48.868929941334024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d9bebbe9d01%3A0x77eea7c448367efe!2s44%20Rue%20Alphonse%20Penaud%2C%2075020%20Paris!5e0!3m2!1sfr!2sfr!4v1690499148340!5m2!1sfr!2sfr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+        </div>
+    </section>
 
-    <div class="divCoffee">
-        <img class="logoMeet" src="assets/img/Logo Meet.png" alt="logo d'une tasse">
-        <p>Installez-vous confortablementdans nos fauteuils douillets,
-             commandez votre café préféré et laissez-vous emporer 
-             par les mots dans une ambiance chaleureuse. </p>
-    </div>
-</section>
-    
+    <!-- ** FIN SECTION INFORMATIONS ** -->
+    <!-- ** DEBUT DU FOOTER ** -->
+    <footer>
+        <div class="logos">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div>
+            <p id="phrase">© Dream Library by the Dream Team</p>
+        </div>
 
-<footer></footer>
+
+    </footer>
+    <!-- ** FIN DU FOOTER ** -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/scripts/carousel-home.js"></script>
+    <script src="assets/scripts/navbar.js"></script>
 </body>
+
 </html>
