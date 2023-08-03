@@ -4,15 +4,13 @@
   box-sizing: border-box;
   margin: 0;  
   padding: 0;
-  /* align-items: center; */
-
 }
 
 :root {
   --main-font: Lato;
   --text-color: #333333; 
   --button-font-size: 0.7rem;
-  --button-background-color: #3A86FF;
+  --button-background-color: #f8f6f2
   --button-text-color: white; 
   --h2-font-size: 0.8rem;
   --h1-font-size: 2.3rem;
@@ -34,11 +32,7 @@ body{
 
 
 header{
-    /* background-color: #F6F4EF; */
     width: 100%;
-
-
-
 } 
 
 
@@ -51,9 +45,6 @@ header{
     align-items: center;
     height: 80px;
     width: 100%;
-    background-attachment: fixed;
-    
-
   }
 
   .logo {
