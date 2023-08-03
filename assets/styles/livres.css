@@ -59,7 +59,7 @@ body {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    padding: 11px;
+    padding: 11px 5px;
     text-align: center;
 }
 
@@ -220,24 +220,17 @@ footer {
 
 footer > .logos { 
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding-top: 16px;
     width: 100%;
     color: black;
 }
 
-
-.fa-instagram{ 
+.fa-brands { 
     color: #333333;
 }
 
-.fa-facebook { 
-    color: #333333;
-}
 
-.fa-linkedin { 
-    color: #333333;
-}
 
 #phrase { 
     font-family: var(--main-font-family);
@@ -301,6 +294,10 @@ footer > .logos {
         padding: 16px 40px;
      }
 
+     .fa-brands { 
+        color: #333333;
+        font-size: 2rem;
+    }
 
 }
 

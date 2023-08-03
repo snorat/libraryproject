@@ -19,11 +19,12 @@
 
 body{
   font-family: "lato";
-  background-color: #F8F6F2;
+  /* background-color: #F8F6F2; */
 }
 
 
   /* styles header nav bar */
+  
 .nav a{
     text-decoration: none;
     color: #000000 ;
