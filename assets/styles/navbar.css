@@ -4,12 +4,11 @@
   box-sizing: border-box;
   margin: 0;  
   padding: 0;
-
 }
 
 :root {
   --main-font: Lato;
-  --text-color: black; 
+  --text-color: #333333; 
   --button-font-size: 0.7rem;
   --button-background-color: #f8f6f2
   --button-text-color: white; 
@@ -19,26 +18,21 @@
 
 body{
   font-family: "lato";
-  /* background-color: #F8F6F2; */
+  background-color: #F8F6F2;
 }
 
 
   /* styles header nav bar */
-  
 .nav a{
     text-decoration: none;
-    color: #000000 ;
+    color: var(--text-color) ;
     font-size: 2rem;
     font-weight: lighter;
 }
 
 
 header{
-    background-color: #F6F4EF;
     width: 100%;
-
-
-
 } 
 
 
@@ -51,8 +45,6 @@ header{
     align-items: center;
     height: 80px;
     width: 100%;
-    
-
   }
 
   .logo {
@@ -83,6 +75,7 @@ header{
 
   .nav-link {
     width: 100%;
+    height:100%;
     top: 80px;
     background-color: #C9DEB4;
     position:absolute; z-index: 1;
@@ -109,6 +102,7 @@ header{
   
   }
   
+
   /* styles format web */
 
   @media screen and (min-width: 1210px) {
