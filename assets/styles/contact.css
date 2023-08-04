@@ -175,6 +175,40 @@ Fin styles des boutton
 }
 
 
+/* ***************************** Debut du footer *****************************  */
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+  background-color:#D7CBC1;
+}
+
+
+footer > .logos { 
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 16px;
+  width: 100%;
+  color: black;
+}
+
+.fa-brands { 
+  color: #333333;
+}
+
+
+
+#phrase { 
+  font-family: var(--main-font-family);
+  font-weight: bold;
+  font-size: medium;
+  padding: 8px;
+  text-align: center;
+}
+
+/* ***************************** Fin du footer *****************************  */
+
+
 /* Media queries pour page web */
 
 @media screen and (min-width: 770px){
@@ -205,5 +239,22 @@ Fin styles des boutton
   padding: 50px;
   border-bottom: 1px solid #ccc;
 }
+
+#phrase { 
+  text-align: left;
+}
+
+
+footer > .logos { 
+  width: 20%;
+  margin:0 auto;
+  justify-content: space-around;
+}
+
+.fa-brands { 
+  color: #333333;
+  font-size: 2rem;
+}
+
 
 }
