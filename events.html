@@ -12,7 +12,7 @@
     <!-- ********************************* DEBUT NAV BAR ********************************* -->
     <header>
         <nav class="nav">
-            <a href="" class="logo"><img src="" alt="Le temps d'un instant"></a>
+            <a href="" class="logo"><img src="assets/img/logo.png" alt="Le temps d'un instant"></a>
 
             <div class="hamburger">
                 <span class="line"></span>
@@ -22,12 +22,14 @@
             </div>
 
             <div class="nav-link hide">
-                <a href="#">Acceuil</a>
-                <a href="#">Librairie</a>
-                <a href="#">Évènement</a>
-                <a href="#">Forum</a>
-                <a href="#">Coffee Shop</a>
-                <a href="#">Contact</a>
+                <a href="/index.html">Acceuil</a>
+                <a href="/livres.html">Librairie</a>
+                <a href="/events.html">Évènement</a>
+                <a href="/forum.html">Forum</a>
+                <a href="/Coffeeshop.html">Coffee Shop</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/page404.html" class="user-icon"><i class="fa-solid fa-user"></i></a>
+                <a href="/page404.html" class="cart-icon"><i class="fa-solid fa-basket-shopping"></i></a>
             </div>
         </nav>
     </header>
@@ -40,41 +42,77 @@
         <input type="search" id="site-search" name="q" placeholder="Rechercher un livre">
         <button id="search-btn">Rechercher</button>  
     </div>
-    
-    <section class="affiche">
+
+
+    <div>
+        <img id="img-concert" src="assets/img/img-events/concert-event.png" alt="image-concert">
+    </div>
+
+    <p id="partage">Chez le temps d'un instant, nous mettons un plus sur les moments de partages,  ce concept qui incarne l'acte de se connecter et d'échanger des livres, des expériences, des émotions ou des pensées avec d'autres personnes. Venez vous évader avec nous lors de nos différents évènements.
+        Seul(e) ou accompagné(e) venez apprécier la musique de vos artistes préférés dans une atmosphère unique et cooconing !</p>
+
+    <section class="section1">
+        <div class="les-events">Concerts</div>
+        <div class="les-events">Black History Month</div>
+        <div class="les-events">Évènement Open Air</div>
+        <div class="les-events">Live-Reading</div>
+        <div class="les-events">Karaoké</div>
+        <div class="les-events">Autour d'un café</div>
+    </section>
+
         
+    
+    </section>
+    
+   
+
+    <section class="affiche">
+        <div class="worldBookDay">
             <h4>23 Avril 2023</h4>
-                <h3>WORLD BOOK DAY</h3>
-                    <button id="learn-more">En savoir plus</button>
+            <h3>WORLD BOOK DAY</h3>
+                <button id="learn-more">En savoir plus</button>
+        </div>
+        
+
+        <article class="article img-book-discount">
+            <img src="assets/img/img-events/book-discount.png" alt="book-discount">
+                    
+        </article>
 
     </section>
-    <article class="article event-1">
-        <img src="assets/img/img-events/reading-books.png" alt="book-discount">
-        
-    </article>
 
-    <article class="article event-2">
-        <img src="assets/img/img-events/book-discount.png" alt="book-discount">
-        
-    </article>
+   
+    <!-- <div class="présentation">
+        Venez vous évader avec nous lors de nos différents évènements.<br>Seul(e) ou accompagné(e) venez apprécier la musique de vos artistes préférés dans une atmosphère unique et cooconing !
+    </div> -->
 
-    <article class="article event-3">
-        <img src="assets/img/img-events/family-event.png" alt="family-event">
-        
-    </article>
+    <div>
+        <h3 id="colors">Vivez l'instant d'un paratage.</h3>
+    </div>
 
-    <article class="article event-4">
-        <!-- <div>
-            <h4>Des moments pour s'évader</h4>
-        </div> -->
+    <section class="events-photos">
+        <div class="article event-1">
+                <img src="assets/img/img-events/reading-books.png" alt="reading-books">
+                
+                <div id="bmh2">
+                    <h2>Black History Month</h2>
+                    <p>Afin de célébrer et reconnaitre les réalisations, les contributions et l'histoire des afros-américains et des personnes d'ascendance africains.</p>
+                    <button class="learn-more" id="enSavoirPlus">En savoir plus</button>
+                </div>
+            
+        </div>
+
+        <article class="article event-3">
+            <img src="assets/img/img-events/family-event.png" alt="family-event">
+
+            <div id="bmh2">
+                <h2>Évènement Open Air</h2>
+                <p>Ces moments favorisent la connexion, l'empathie et la compréhension, enrichissent nos vies et nous rappellent notre humanité commune.</p>
+                <button class="learn-more" id="enSavoirPlus">En savoir plus</button>
+            </div>
     
-            <img src="assets/img/img-events/concert-event.png" alt="family-event">
-        
-        
-    </article>
-
-    <section>
-
+            
+        </article>
     </section>
     
 
@@ -120,7 +158,7 @@
                     <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
                 </div>  
                 <div>
-                    <p id="phrase">© Dream Library by the Dream Team</p>
+                    <p id="phrase">© 2023 Le temps d'un instant - Library Team</p>
                 </div>
                 
         <!-- </div> -->

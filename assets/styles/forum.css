@@ -1,7 +1,7 @@
     /* Styles pour la section "imagecforum" */
 .imageforum {
     background-size: cover;
-    height: 80vh;
+    height: 40vh;
     display: flex;
     align-items: center;
     justify-content: center;

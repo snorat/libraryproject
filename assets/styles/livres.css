@@ -289,6 +289,10 @@ footer > .logos {
         width: 75%;
         }
 
+    #site-search{ 
+        padding-right: 50px;
+    }   
+
     #search-btn { 
         margin: 8px;
         padding: 16px 40px;
