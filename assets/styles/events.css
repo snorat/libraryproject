@@ -199,17 +199,19 @@ h4{
     text-align: center;
 }
 
-#colors{
+#colors {
     background-image: url(/assets/img/img-events/colors.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     width: 100%;
     height: 400px;
     color: white;
     text-align: center;
-    justify-content: content;
+    justify-content: center;
+    font-size: 3em;
 }
 
 
