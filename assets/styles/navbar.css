@@ -1,0 +1,121 @@
+/* styles général */
+
+* {
+  box-sizing: border-box;
+  margin: 0;  
+  padding: 0;
+}
+
+:root {
+  --main-font: Lato;
+  --button-font-size: 1rem;
+  --text-color: #333333; 
+  --button-font-size: 0.7rem;
+  --button-background-color: #f8f6f2
+  --button-text-color: white; 
+  --h2-font-size: 1.4em;
+  --h1-font-size: 2.3rem;
+}
+
+body{
+  font-family: "lato";
+  background-color: #F8F6F2;
+}
+
+.nav a{
+    text-decoration: none;
+    color: var(--text-color) ;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+
+header{
+    width: 100%;
+} 
+
+
+/* styles navbar mobile first */
+
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+  }
+
+  .logo {
+    padding-left: 20px;
+
+    }
+
+.logo img{
+  height: 65px;
+  width: 65px;
+
+}
+
+
+  .hamburger {
+    padding-right: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+  }
+
+  .hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 8px;
+    background-color: black;
+  }
+
+  .nav-link {
+    width: 100%;
+    height:100%;
+    top: 80px;
+    background-color: #C9DEB4;
+    position:absolute; z-index: 1;
+  }
+
+  .nav-link a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-link a:hover {
+    background-color: #9FCF89;
+    color: white;
+    font-weight: bold;
+  }
+
+  .hide {
+    display: none;
+
+
+  }
+
+  @media screen and (min-width: 1210px) {
+
+
+    .nav-link {
+      display: block;
+      position: static;
+      width: auto;
+      margin-right: 20px;
+      background: none;
+    }
+
+    .nav-link a {
+      display: inline-block;
+      padding: 25px;
+      font-size: 1rem;
+    }
+
+    .hamburger {
+      display: none;
+    }
+  }

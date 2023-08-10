@@ -1,0 +1,293 @@
+* {
+  font-family: "lato";
+}
+
+.hero {
+  height: 30vh;
+  /*background-color: rgb(247, 219, 224);*/
+  position: relative;
+}
+
+.hero video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  background-color: #574941;
+}
+
+.princialTitle {
+  font-size: 2.5rem;
+  /*color: #faef9e;*/
+  color: #9fcf89;
+  text-align: center;
+  padding-top: 30px;
+  width: 100%;
+  height: 150px;
+}
+
+.hero .content {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: #9fcf89;
+  /*font-size: 3rem;*/
+  /* opacity: 0.8;*/
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.divClass {
+  /* position: absolute;*/
+  background-color: #c8b9ab;
+  margin-top: 20px;
+  margin: auto;
+  width: 90%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.divClass>button {
+  /*background-color: #80c482;
+  border-radius: 20px;
+  color: black;
+  font-weight: bolder;
+  width: 40%;
+  line-height: 20px;*/
+  font-size: 1rem;
+  background-color: #c9deb4;
+  color: black;
+  border: 2px solid #998070;
+  border-radius: 0.3em;
+  width: 150px;
+  height: 45px;
+  margin: 5px 15px 15px;
+}
+
+.divClass button:hover {
+  /*background-color: #faef9e;*/
+  background-color: #faef9e;
+}
+
+strong {
+  color: black;
+}
+
+/* section*/
+.titleConcept {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 1.7em;
+  /*color: #80C482;*/
+  color: #998070;
+}
+
+.lineBlack {
+  background-color: #998070;
+  height: 6px;
+  width: 100px;
+}
+
+.main {
+  /*background-color: #f2ecdf;*/
+  background-color: #f8f6f2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 15px;*/
+}
+
+.divCoffee {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  /*width: 250px;
+        height: 250px;*/
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px #888282;
+  border: 1px solid #998070;
+}
+
+.divCoffee a>img {
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+}
+
+.divCoffee>p {
+  padding: 0 50px 20px 50px;
+}
+
+/*informations*/
+
+.informations {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f5eee4;
+  /*border: 1px solid #c8b9ab;*/
+}
+
+.column {
+  flex: 1;
+  padding: 50px;
+  border-right: 1px solid #ccc;
+  /*border: 1px solid #c8b9ab;*/
+}
+
+.column>h2 {
+  color: var(--main-text-color);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.column>p {
+  color: var(--second-text-color);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.map {
+  flex: 1;
+  height: 300px;
+  text-align: center;
+  color: var(--second-text-color);
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.column:last-child {
+  border-right: none;
+}
+
+/* Fin de la section information */
+
+/* Debut du footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+  background-color: #d7cbc1;
+  /* border: 1px solid #c8b9ab;*/
+}
+
+footer>.logos {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 16px;
+  width: 100%;
+  color: black;
+}
+
+.fa-brands {
+  color: #333333;
+}
+
+#phrase {
+  font-family: var(--main-font-family);
+  font-weight: bold;
+  font-size: medium;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Fin du footer **  */
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    height: 94vh;
+  }
+
+  .hero video {
+    width: 100%;
+    object-fit: cover;
+    /*opacity: 0.5;*/
+    background-color: aquamarine;
+  }
+
+  .content h1 {
+    font-size: 5rem;
+    margin-bottom: 30rem;
+  }
+
+  .divClass {
+    margin-top: 20px;
+    margin: auto;
+    width: 70%;
+    padding: 20px;
+  }
+
+  h2 {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 4rem;
+    /*color: #80C482;*/
+    color: #998070;
+  }
+
+  .lineBlack {
+    background-color: #998070;
+    height: 6px;
+    width: 400px;
+    border: 1px solid #574941;
+  }
+
+  .divClass>p {
+    font-size: 2.2rem;
+    margin: 0 50px 50px 50px;
+  }
+
+  .divClass>button {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .divCoffee {
+    width: 500px;
+    height: 450px;
+  }
+
+  .divCoffee>p {
+    padding: 0 70px 50px 70px;
+    font-size: 25px;
+  }
+
+  .divCoffee>a {
+    padding: 40px 40px 0 40px;
+  }
+
+  .divCoffee a>img {
+    width: 80px;
+    height: 80px;
+    margin-top: 30px;
+  }
+}
