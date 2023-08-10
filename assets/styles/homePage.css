@@ -157,12 +157,15 @@ h2 {
   color: var(--main-text-color);
   text-align: center;
   margin-bottom: 15px;
+  font-size: 28px;
+  color: #333333;
 }
 
 .column>p {
   color: var(--second-text-color);
   font-size: 12px;
   line-height: 1.6;
+  color: #6666666;
 }
 
 .map {
