@@ -12,7 +12,7 @@ h1 {
     align-items: center;
     text-align: center;
     font-size: 3em;
-    background-image: url("/assets/img/img-events/photo.png");
+    background-image: url("/libraryproject/assets/img/img-events/photo.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px;
@@ -200,7 +200,7 @@ h4{
 }
 
 #colors {
-    background-image: url("/assets/img/img-events/colors.png");
+    background-image: url("/libraryproject/assets/img/img-events/colors.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
