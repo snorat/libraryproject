@@ -53,7 +53,7 @@ body {
 }
 
 .headercoffeeshop {
-    background-image: url("/assets/img/h1\ header\ copie.png");
+    background-image: url("/libraryproject/assets/img/h1\ header\ copie.png");
     background-size: cover;
     display: flex;
     height: 40vh;
@@ -123,19 +123,19 @@ main>h2 {
 }
 
 .product1 {
-    background-image: url("/assets/img/Main_coffee.png");
+    background-image: url("/libraryproject/assets/img/Main_coffee.png");
 }
 
 .product2 {
-    background-image: url("/assets/img/cafe_glasse_tabithaturner.png");
+    background-image: url("/libraryproject/assets/img/cafe_glasse_tabithaturner.png");
 }
 
 .product3 {
-    background-image: url("/assets/img/Les_chouchous_de_nos_abonnes1.png");
+    background-image: url("/libraryproject/assets/img/Les_chouchous_de_nos_abonnes1.png");
 }
 
 .product4 {
-    background-image: url("/assets/img/matcha_latte_alana_harris.avif");
+    background-image: url("/libraryproject/assets/img/matcha_latte_alana_harris.avif");
 }
 
 .card button {

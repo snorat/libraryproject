@@ -30,7 +30,7 @@ body {
     align-content: space-between;
     justify-content: center; 
     padding: 40px;
-    background-image: url(/assets/img/img-livres/livres_header.png);
+    background-image: url("/libraryproject/assets/img/img-livres/livres_header.png");
     background-size: cover;
     max-height: 90vh ;
     background-repeat: no-repeat;
