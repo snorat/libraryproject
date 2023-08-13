@@ -2,13 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 
-* { 
-    margin: 0 ;
-    padding: 0;
-    /* border: 1px solid red; */
-}
-
-
 :root { 
     --main-font-family: "Lato";
     --main-background-color: #f8f6f2;
@@ -19,10 +12,6 @@
 
 
 
-body { 
-    background-color: var(--main-background-color);
-}
-
 
 .header {
     display: flex;
@@ -32,7 +21,7 @@ body {
     padding: 40px;
     background-image: url("/libraryproject/assets/img/img-livres/livres_header.png");
     background-size: cover;
-    max-height: 90vh ;
+    max-height: 30vh ;
     background-repeat: no-repeat;
     text-align: center;
 }
@@ -41,7 +30,7 @@ body {
     font-size: 2.3rem;
 }
 
-.lol {
+.bouton {
     display: flex;
     align-items: center;
     background-color: white;
@@ -66,8 +55,7 @@ body {
 #search-btn { 
     background: none;
 	color: var(--main-text-color);
-	border: none;
-	padding: 10px;
+	border:none;
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
@@ -75,6 +63,7 @@ body {
     background-color: #C9DEB4;
     padding: 10px 24px;
     font-weight: 600;
+    width: max-content;
 }
 
 
@@ -269,6 +258,19 @@ footer > .logos {
         margin : 0 24px 48px
     }
 
+
+.informations > .column > p{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  .column {
+    flex: 1; 
+    padding: 50px;
+    border-bottom: 1px solid #ccc;
+  }
+
     #phrase { 
         text-align: left;
     }
@@ -281,7 +283,7 @@ footer > .logos {
     }
 
 
-    .lol {
+    .bouton {
         display: flex;
         justify-content: space-between;
         margin: 16px auto;

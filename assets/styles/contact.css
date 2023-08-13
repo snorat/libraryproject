@@ -7,20 +7,23 @@ text-align: left;
 
 /* Styles pour la section "imagecontact" */
 .imagecontact {
-  background-size: cover;
-  height: 40vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-image: url("/libraryproject/assets/img/img-contact/timothy-barlin-GX4YM64o49U-unsplash.png");
-  opacity: 70%;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center; 
+  padding: 40px;
+  background-size: cover;
+  max-height: 90vh ;
+  background-repeat: no-repeat;
+  text-align: center;
+
 }
 
 .imagecontact > h1 {
-  font-size: var(--h1-font-size);
-  color: black;
-}
+  font-size: 2.3rem;
+ }
 
 /* Styles pour la section "présentation" */
 .présentation {

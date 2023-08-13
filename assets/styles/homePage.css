@@ -41,15 +41,6 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   text-align: center;
   color: #333333;
-  /* position: absolute;*/
-  /* background-color: #c8b9ab;
-  margin-top: 20px;
-  margin: auto;
-  width: 90%;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end; */
 }
 
 .divClass>button {
@@ -80,7 +71,7 @@ strong {
   align-items: center;
 }
 
-h2 {
+.titleConcept>.lineBlack>h2 {
   margin-left: 5px;
   margin-right: 5px;
   color: #998070;
@@ -117,7 +108,7 @@ h2 {
 }
 
 .divCoffee a>img {
-  width: 25px;
+  width: 10px;
   height: 25px;
   margin-top: 30px;
 }
@@ -226,12 +217,12 @@ footer>.logos {
     padding: 20px;
   }
 
-  /* h2 {
+  .titleConcept>.lineBlack>h2  {
     margin-left: 5px;
     margin-right: 5px;
     font-size: 4rem;
     color: #998070;
-  } */
+  }
 
   .lineBlack {
     background-color: #998070;

@@ -44,19 +44,12 @@
     --img-widht-web: 45%;*/
 }
 
-body {
-
-    background-color: #F8F6F2;
-    font-family: var(--main-font);
-    color: var(--text-color);
-
-}
 
 .headercoffeeshop {
     background-image: url("/libraryproject/assets/img/h1\ header\ copie.png");
     background-size: cover;
     display: flex;
-    height: 40vh;
+    height: 30vh;
     margin: auto;
     align-content: center;
     flex-direction: row;
@@ -247,7 +240,7 @@ footer>.logos {
 
 /* -------WEBSITE------------ */
 
-@media only screen and (min-width: 401px) {
+@media only screen and (min-width: 1024px) {
 
     main>h2 {
         margin: 3rem;
