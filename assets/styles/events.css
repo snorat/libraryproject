@@ -17,8 +17,7 @@ h1 {
     background-size: cover;
     padding: 100px;
     color: #333333;
-    height: 40vh;
-    /* border: 2px solid; */
+    height: 30vh;
 }
 
 
@@ -336,7 +335,7 @@ h4{
         
 /* ***************************** Fin du footer *****************************  */
 
-    @media screen and (min-width: 401px){
+    @media screen and (min-width: 1024px){
 
 
         h1{ 

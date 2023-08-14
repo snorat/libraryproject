@@ -21,7 +21,7 @@
     padding: 40px;
     background-image: url("/libraryproject/assets/img/img-livres/livres_header.png");
     background-size: cover;
-    max-height: 30vh ;
+    height: 30vh ;
     background-repeat: no-repeat;
     text-align: center;
 }
@@ -239,11 +239,10 @@ footer > .logos {
 
 /* ***************************** Debut des Media Queries *****************************  */
 
-@media screen and (min-width: 401px) { 
+@media screen and (min-width: 1024px) { 
     .header { 
         height: 80vh;
-        display: flex;
-        align-content: center;
+        background-attachment: fixed;
     }
     
 

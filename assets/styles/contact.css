@@ -217,7 +217,8 @@ footer > .logos {
 @media screen and (min-width: 770px){
 
   .imagecontact{
-    height: 50vh;
+    height: 80vh;
+    background-attachment: fixed;
   }
 
   .présentation {

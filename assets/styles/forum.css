@@ -294,9 +294,8 @@ footer > .logos {
 @media screen and (min-width: 770px){
 
 .imageforum{
-        height: 80vh;
-        display: flex;
-        align-content: center;
+    height: 80vh;
+    background-attachment: fixed;
 }
 
 .flexconteneur {
@@ -314,6 +313,35 @@ footer > .logos {
     margin: 30px 100px;
     padding: 50px 150px;
 }
+
+.informations > .column > p{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  .column {
+    flex: 1; 
+    padding: 50px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  #phrase { 
+    text-align: left;
+  }
+  
+  
+  footer > .logos { 
+    width: 20%;
+    margin:0 auto;
+    justify-content: space-around;
+  }
+  
+  .fa-brands { 
+    color: #333333;
+    font-size: 2rem;
+  }
+  
 
 }
     

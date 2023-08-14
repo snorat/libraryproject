@@ -312,4 +312,33 @@ footer>.logos {
     .quote>h5 {
         font-size: 1.2rem;
     }
+
+    .informations > .column > p{
+        font-size: 20px;
+        text-align: center;
+        padding-top: 30px;
+      }
+      
+      .column {
+        flex: 1; 
+        padding: 50px;
+        border-bottom: 1px solid #ccc;
+      }
+      
+      #phrase { 
+        text-align: left;
+      }
+      
+      
+      footer > .logos { 
+        width: 20%;
+        margin:0 auto;
+        justify-content: space-around;
+      }
+      
+      .fa-brands { 
+        color: #333333;
+        font-size: 2rem;
+      }
+      
 }
