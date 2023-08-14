@@ -4,8 +4,6 @@
   box-sizing: border-box;
   margin: 0;  
   padding: 0;
-  font-family: "lato";
-  text-align: center;
 
 }
 
@@ -13,8 +11,9 @@
   --main-font: Lato;
   --button-font-size: 1rem;
   --text-color: #333333; 
+  --second-text-color: #666666;
   --button-font-size: 0.7rem;
-  --button-background-color: #f8f6f2
+  --button-background-color: #f8f6f2;
   --button-text-color: white; 
   --h2-font-size: 1.4em;
   --h1-font-size: 2.3rem;
@@ -23,6 +22,7 @@
 body{
   font-family: "lato";
   background-color: #F8F6F2;
+  text-align: center;
 }
 
 .nav a{

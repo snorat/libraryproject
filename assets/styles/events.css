@@ -295,8 +295,7 @@ h4{
           .column:last-child {
             border-right: none;
           }
-        /* *************** Fin de la section information ********************/ 
-        
+        /* *************** Fin de la section information ********************/         
         
         
         
@@ -472,21 +471,33 @@ h4{
                 margin-top: 16px;
             }
 
-            #phrase { 
+            .informations > .column > p{
+                font-size: 20px;
+                text-align: center;
+                padding-top: 30px;
+              }
+              
+              .column {
+                flex: 1; 
+                padding: 50px;
+                border-bottom: 1px solid #ccc;
+              }
+              
+              #phrase { 
                 text-align: left;
-            }
-        
-        
-            footer > .logos { 
+              }
+              
+              
+              footer > .logos { 
                 width: 20%;
                 margin:0 auto;
                 justify-content: space-around;
-            }
-        
-            .fa-brands { 
+              }
+              
+              .fa-brands { 
                 color: #333333;
                 font-size: 2rem;
-            }
+              }
         
         
         }
