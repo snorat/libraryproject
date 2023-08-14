@@ -1,9 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /* border: 1px solid red */
-}
 
 :root {
     /* MOBILE */
@@ -46,21 +40,18 @@
 
 
 .headercoffeeshop {
-    background-image: url("/libraryproject/assets/img/h1\ header\ copie.png");
-    background-size: cover;
+    
     display: flex;
-    height: 30vh;
-    margin: auto;
-    align-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
-    /* background-color: red; */
-    width: 100%;
-}
-
-.headercoffeeshop>h1 {
-    font-size: var(--h1-font-size);
+    align-items: center;
+    text-align: center;
+    font-size: 3em;
+    background-image: url("/libraryproject/assets/img/h1\ header\ copie.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    color: #333333;
+    height: 30vh;
 }
 
 .ambiance {

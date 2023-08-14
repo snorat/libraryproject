@@ -1,29 +1,19 @@
 
-.body{
-  
-width: 1200px;
-text-align: left; 
-}
-
 /* Styles pour la section "imagecontact" */
 .imagecontact {
-  background-image: url("/libraryproject/assets/img/img-contact/timothy-barlin-GX4YM64o49U-unsplash.png");
-  width: 100%;
+
   display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: center; 
-  padding: 40px;
-  background-size: cover;
-  max-height: 90vh ;
-  background-repeat: no-repeat;
+  background-image: url("/libraryproject/assets/img/img-contact/timothy-barlin-GX4YM64o49U-unsplash.png");
+  justify-content: center;
+  align-items: center;
   text-align: center;
-
+  font-size: 3em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+  color: #333333;
+  height: 30vh;
 }
-
-.imagecontact > h1 {
-  font-size: 2.3rem;
- }
 
 /* Styles pour la section "présentation" */
 .présentation {
@@ -163,7 +153,7 @@ Fin styles des boutton
 
 .map {
   flex: 1;
-  height: 250px;
+  height: 180px;
   text-align: center;
   color: #666666;
 }

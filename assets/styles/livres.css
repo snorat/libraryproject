@@ -14,21 +14,20 @@
 
 
 .header {
+
     display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: center; 
-    padding: 40px;
-    background-image: url("/libraryproject/assets/img/img-livres/livres_header.png");
-    background-size: cover;
-    height: 30vh ;
-    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    font-size: 3em;
+    background-image: url("/libraryproject/assets/img/img-livres/livres_header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    color: #333333;
+    height: 30vh;
 }
 
-.header > h1 { 
-    font-size: 2.3rem;
-}
 
 .bouton {
     display: flex;
@@ -178,7 +177,7 @@ button:hover {
   
   .map {
     flex: 1;
-    height: 300px;
+    height: 180px;
     text-align: center;
     color: var(--second-text-color);
   }
