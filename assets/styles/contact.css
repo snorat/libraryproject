@@ -18,7 +18,7 @@ text-align: left;
 }
 
 .imagecontact > h1 {
-  font-size: var(--h1-font-size);
+  font-size: 75px;
   color: black;
 }
 

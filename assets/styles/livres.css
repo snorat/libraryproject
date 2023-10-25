@@ -38,7 +38,7 @@ body {
 }
 
 .header > h1 { 
-    font-size: 2.3rem;
+    font-size: 3em;
 }
 
 .lol {
@@ -259,7 +259,7 @@ footer > .logos {
     
 
     .header > h1 { 
-        font-size: 3rem;
+        font-size: 75px;
     }
     
     .section_livres { 

@@ -11,7 +11,7 @@
     --main-font: Lato;
     --text-color: #333333;
     --h2-font-size: 1.4rem;
-    --h1-font-size: 2.1rem;
+    --h1-font-size: 3em;
     --font-size-mobile: 1rem;
 
 
@@ -260,7 +260,7 @@ footer>.logos {
     }
 
     .headercoffeeshop>h1 {
-        font-size: var(--h1-font-size-web);
+        font-size: 75px;
     }
     
     .cards {

@@ -11,8 +11,9 @@
   }
   
   .imageforum > h1 {
-    font-size: var(--h1-font-size);
-    color: black
+    font-size: 75px;
+    color: black;
+
   }
 
 

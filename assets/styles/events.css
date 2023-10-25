@@ -18,6 +18,7 @@ h1 {
     padding: 100px;
     color: #333333;
     height: 40vh;
+    font-family: var(--main-font-family);
     /* border: 2px solid; */
 }
 
