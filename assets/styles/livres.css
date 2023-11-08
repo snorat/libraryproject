@@ -1,12 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
-
-* { 
-    margin: 0 ;
-    padding: 0;
-    /* border: 1px solid red; */
-}
+/* @import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); */
 
 
 :root { 
@@ -19,29 +12,25 @@
 
 
 
-body { 
-    background-color: var(--main-background-color);
-}
-
 
 .header {
+
     display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: center; 
-    padding: 40px;
-    background-image: url(/assets/img/img-livres/livres_header.png);
-    background-size: cover;
-    max-height: 90vh ;
-    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    font-size: 3em;
+    background-image: url("/libraryproject/assets/img/img-livres/livres_header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    color: #333333;
+    height: 30vh;
+
 }
 
-.header > h1 { 
-    font-size: 2.3rem;
-}
 
-.lol {
+.bouton {
     display: flex;
     align-items: center;
     background-color: white;
@@ -66,8 +55,7 @@ body {
 #search-btn { 
     background: none;
 	color: var(--main-text-color);
-	border: none;
-	padding: 10px;
+	border:none;
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
@@ -75,6 +63,7 @@ body {
     background-color: #C9DEB4;
     padding: 10px 24px;
     font-weight: 600;
+    width: max-content;
 }
 
 
@@ -189,7 +178,7 @@ button:hover {
   
   .map {
     flex: 1;
-    height: 300px;
+    height: 180px;
     text-align: center;
     color: var(--second-text-color);
   }
@@ -250,11 +239,10 @@ footer > .logos {
 
 /* ***************************** Debut des Media Queries *****************************  */
 
-@media screen and (min-width: 401px) { 
+@media screen and (min-width: 1024px) { 
     .header { 
         height: 80vh;
-        display: flex;
-        align-content: center;
+        background-attachment: fixed;
     }
     
 
@@ -269,6 +257,19 @@ footer > .logos {
         margin : 0 24px 48px
     }
 
+
+.informations > .column > p{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  .column {
+    flex: 1; 
+    padding: 50px;
+    border-bottom: 1px solid #ccc;
+  }
+
     #phrase { 
         text-align: left;
     }
@@ -281,13 +282,17 @@ footer > .logos {
     }
 
 
-    .lol {
+    .bouton {
         display: flex;
         justify-content: space-between;
         margin: 16px auto;
         padding: 0;
         width: 75%;
         }
+
+    #site-search{ 
+        padding-right: 50px;
+    }   
 
     #search-btn { 
         margin: 8px;

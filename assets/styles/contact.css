@@ -1,25 +1,18 @@
 
-.body{
-  
-width: 1200px;
-text-align: left; 
-}
-
 /* Styles pour la section "imagecontact" */
 .imagecontact {
-  background-size: cover;
-  height: 40vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url("/assets/img/img-contact/timothy-barlin-GX4YM64o49U-unsplash.png");
-  opacity: 70%;
-  width: 100%;
-}
 
-.imagecontact > h1 {
-  font-size: var(--h1-font-size);
-  color: black;
+  display: flex;
+  background-image: url("/libraryproject/assets/img/img-contact/timothy-barlin-GX4YM64o49U-unsplash.png");
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+  color: #333333;
+  height: 30vh;
 }
 
 /* Styles pour la section "présentation" */
@@ -160,7 +153,7 @@ Fin styles des boutton
 
 .map {
   flex: 1;
-  height: 300px;
+  height: 180px;
   text-align: center;
   color: #666666;
 }
@@ -175,12 +168,47 @@ Fin styles des boutton
 }
 
 
+/* ***************************** Debut du footer *****************************  */
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+  background-color:#D7CBC1;
+}
+
+
+footer > .logos { 
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 16px;
+  width: 100%;
+  color: black;
+}
+
+.fa-brands { 
+  color: #333333;
+}
+
+
+
+#phrase { 
+  font-family: var(--main-font-family);
+  font-weight: bold;
+  font-size: medium;
+  padding: 8px;
+  text-align: center;
+}
+
+/* ***************************** Fin du footer *****************************  */
+
+
 /* Media queries pour page web */
 
 @media screen and (min-width: 770px){
 
   .imagecontact{
-    height: 50vh;
+    height: 80vh;
+    background-attachment: fixed;
   }
 
   .présentation {
@@ -205,5 +233,22 @@ Fin styles des boutton
   padding: 50px;
   border-bottom: 1px solid #ccc;
 }
+
+#phrase { 
+  text-align: left;
+}
+
+
+footer > .logos { 
+  width: 20%;
+  margin:0 auto;
+  justify-content: space-around;
+}
+
+.fa-brands { 
+  color: #333333;
+  font-size: 2rem;
+}
+
 
 }

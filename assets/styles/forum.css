@@ -1,20 +1,19 @@
     /* Styles pour la section "imagecforum" */
 .imageforum {
-    background-size: cover;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url("/assets/img/img-forum/roman-bozhko-OXXsAafHDeo-unsplash.png");
-    opacity: 70%;
-    
-  }
-  
-  .imageforum > h1 {
-    font-size: var(--h1-font-size);
-    color: black
-  }
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3em;
+    background-image: url("/libraryproject/assets/img/img-forum/roman-bozhko-OXXsAafHDeo-unsplash.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    color: #333333;
+    height: 30vh;
+
+  }
 
 .presentation-forum {
     padding: 20px;
@@ -236,7 +235,7 @@ h4:hover{
 
   .map {
     flex: 1;
-    height: 300px;
+    height: 180px;
     text-align: center;
     color: var(--second-text-color);
   }
@@ -291,7 +290,10 @@ footer > .logos {
 
 @media screen and (min-width: 770px){
 
-
+.imageforum{
+    height: 80vh;
+    background-attachment: fixed;
+}
 
 .flexconteneur {
     display: flex ;
@@ -303,11 +305,40 @@ footer > .logos {
     .sectionforum{
         width: 90%;
     }
- */
+
 .post-editor{
     margin: 30px 100px;
     padding: 50px 150px;
 }
+
+.informations > .column > p{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  .column {
+    flex: 1; 
+    padding: 50px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  #phrase { 
+    text-align: left;
+  }
+  
+  
+  footer > .logos { 
+    width: 20%;
+    margin:0 auto;
+    justify-content: space-around;
+  }
+  
+  .fa-brands { 
+    color: #333333;
+    font-size: 2rem;
+  }
+  
 
 }
     
